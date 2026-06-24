@@ -59,14 +59,14 @@ const translations = {
     fundingRole: "Principal Investigator (PI)",
     fundingMeta: "2025–2027 | ¥300,000 (~US$42,000)",
     fundingDesc:
-      "Awarded by the National Natural Science Foundation of China (NSFC) to support research on stellar CME dynamics.",
+      "Awarded by the National Natural Science Foundation of China (NSFC) to support the project “Numerical Simulations of Stellar Coronal Mass Ejections”.",
 
-    award1: "National Scholarship<br>¥30k (~US$4.2k)",
-    award2: "National Scholarship<br>¥30k (~US$4.2k)",
-    award3: "Ubiquant Scholarship<br>¥10k (~US$1.4k)",
-    award4: "Greenview Scholarship<br>¥5k (~US$0.7k)",
-    award5: "Silvercorp Scholarship<br>¥12k (~US$1.7k)",
-    award6: "China National Petroleum Corporation Scholarship<br>¥6k (~US$0.85k)",
+    award1: "National Scholarship<br>¥30,000 (~US$4,200)",
+    award2: "National Scholarship<br>¥30,000 (~US$4,200)",
+    award3: "Ubiquant Scholarship<br>¥10,000 (~US$1,400)",
+    award4: "Greenview Scholarship<br>¥5,000 (~US$700)",
+    award5: "Silvercorp Scholarship<br>¥12,000 (~US$1,700)",
+    award6: "China National Petroleum Corporation Scholarship<br>¥6,000 (~US$850)",
 
     experienceEyebrow: "Experience",
     experienceTitle: "Observations",
@@ -118,14 +118,14 @@ const translations = {
     metricFunding: "科研资助",
 
     researchEyebrow: "研究",
-    researchTitle: "从太阳爆发到系外行星空间天气",
+    researchTitle: "从太阳爆发到系外空间天气",
     researchCard1Title: "太阳爆发的机制与性质",
     researchCard1Text:
       "太阳爆发包括耀斑和日冕物质抛射（CME），是驱动空间天气的关键过程。我们研究这些爆发的物理性质及其背后的物理机制。",
     researchCard2Title: "太阳-恒星联系",
     researchCard2Text:
       "以太阳为基准，我们探索其他恒星上的 CME 可能如何发生、其性质如何随恒星类型变化，以及如何通过观测探测这些爆发现象。",
-    researchCard3Title: "系外行星空间天气",
+    researchCard3Title: "系外空间天气",
     researchCard3Text:
       "通过数值模拟，我们研究恒星 CME 如何塑造系外行星周围的空间天气环境，并评估其对系外行星宜居性的影响。",
 
@@ -144,7 +144,7 @@ const translations = {
     fundingRole: "项目负责人（PI）",
     fundingMeta: "2025–2027 | 30 万元人民币（约 4.2 万美元）",
     fundingDesc:
-      "由国家自然科学基金委员会（NSFC）资助，用于支持恒星日冕物质抛射动力学研究。",
+      "由国家自然科学基金委员会（NSFC）资助，研究课题为“恒星星冕物质抛射的数值模拟”。",
 
     award1: "国家奖学金<br>3万元",
     award2: "国家奖学金<br>3万元",
@@ -172,7 +172,7 @@ const translations = {
     posters: "墙报展示",
 
     contactEyebrow: "联系",
-    contactTitle: "欢迎就太阳-恒星爆发和系外行星空间天气开展合作。",
+    contactTitle: "欢迎就太阳-恒星爆发和系外空间天气开展合作。",
     seeMore: "查看更多 >>",
     showLess: "收起",
   },
