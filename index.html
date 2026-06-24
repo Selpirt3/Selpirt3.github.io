@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Zheng Sun, Ph.D. candidate in space physics working on solar and stellar eruptions, coronal mass ejections, and exoplanetary space weather."
+      content="Zheng Sun, Ph.D. candidate in space physics working on solar and stellar magnetic eruptions, coronal mass ejections, and exoplanetary space weather."
     />
     <title>Zheng Sun | Space Physics</title>
     <link
@@ -31,33 +31,45 @@
           <span class="brand-mark">ZS</span>
           <span>Zheng Sun</span>
         </a>
-        <nav class="nav-links">
-          <a href="#research">Research</a>
-          <a href="#publications">Publications</a>
-          <a href="#experience">Experience</a>
-          <a href="#talks">Talks</a>
-          <a href="#contact">Contact</a>
-        </nav>
+        <div class="topbar-controls">
+          <nav class="nav-links">
+            <a href="#research" data-i18n="navResearch">Research</a>
+            <a href="#publications" data-i18n="navPublications">Publications</a>
+            <a href="#experience" data-i18n="navExperience">Experience</a>
+            <a href="#talks" data-i18n="navPresentations">Presentations</a>
+            <a href="#contact" data-i18n="navContact">Contact</a>
+          </nav>
+          <button class="language-toggle" type="button" data-language-toggle aria-label="Switch language">
+            中文
+          </button>
+        </div>
       </header>
 
       <main id="home">
         <section class="hero section-grid" aria-labelledby="hero-title">
           <div class="hero-copy">
-            <p class="eyebrow">Space Physics · Astrophysics</p>
+            <p class="eyebrow" data-i18n="heroEyebrow">Space Science · Astrophysics</p>
             <h1 id="hero-title">Zheng Sun</h1>
-            <p class="hero-lede">
+            <p class="hero-lede" data-i18n="heroLede">
               Ph.D. candidate at Peking University in China and visiting student at the Leibniz Institute for
               Astrophysics Potsdam (AIP) in Germany, studying solar and stellar eruptions, and
               space weather environments around exoplanets.
             </p>
             <div class="hero-actions" aria-label="Profile links">
-              <a class="button primary" href="mailto:zhsun@aip.de">Email</a>
+              <a class="button primary" href="mailto:zhsun@aip.de" data-i18n="email">Email</a>
               <a
                 class="button"
                 href="https://scholar.google.com/citations?user=lBU4pfsAAAAJ&hl=zh-CN"
                 target="_blank"
                 rel="noreferrer"
                 >Google Scholar</a
+              >
+              <a
+                class="button"
+                href="https://www.researchgate.net/profile/Zheng-Sun-27?ev=hdr_xprf"
+                target="_blank"
+                rel="noreferrer"
+                >ResearchGate</a
               >
               <a
                 class="button"
@@ -76,15 +88,15 @@
             <div class="role-card">
               <span class="status-dot" aria-hidden="true"></span>
               <div>
-                <strong>Ph.D. Candidate, Peking University</strong>
-                <p>Space Physics<br>Sep 2022 -- Now</p>
+                <strong data-i18n="rolePhd">Ph.D. Candidate, Peking University</strong>
+                <p data-i18n="rolePhdMeta">Space Physics<br>Sep 2022 -- Now</p>
               </div>
             </div>
             <div class="role-card muted">
               <span class="status-dot cool" aria-hidden="true"></span>
               <div>
-                <strong>Visiting Student, AIP</strong>
-                <p>Stellar Physics and Exoplanets<br>Nov 2024 -- Now</p>
+                <strong data-i18n="roleAip">Visiting Student, AIP</strong>
+                <p data-i18n="roleAipMeta">Stellar Physics and Exoplanets<br>Nov 2024 -- Now</p>
               </div>
             </div>
           </aside>
@@ -93,47 +105,47 @@
         <section class="metrics" aria-label="Research highlights">
           <div>
             <span class="metric-value">10</span>
-            <span class="metric-label">first-author papers</span>
+            <span class="metric-label" data-i18n="metricFirstAuthor">first-author papers</span>
           </div>
           <div>
-            <span class="metric-value">15+</span>
-            <span class="metric-label">conference talks</span>
+            <span class="metric-value">25</span>
+            <span class="metric-label" data-i18n="metricPublications">publications</span>
           </div>
           <div>
-            <span class="metric-value">2</span>
-            <span class="metric-label">major observatory programs</span>
+            <span class="metric-value">15</span>
+            <span class="metric-label" data-i18n="metricTalks">conference talks</span>
           </div>
           <div>
-            <span class="metric-value">Solar → Stellar</span>
-            <span class="metric-label">eruption physics</span>
+            <span class="metric-value">1</span>
+            <span class="metric-label" data-i18n="metricFunding">Funding</span>
           </div>
         </section>
 
         <section id="research" class="section-block">
           <div class="section-heading">
-            <p class="eyebrow">Research</p>
-            <h2>Connecting solar eruptions to exoplanetary space weather.</h2>
+            <p class="eyebrow" data-i18n="researchEyebrow">Research</p>
+            <h2 data-i18n="researchTitle">Connecting solar eruptions to exoplanetary space weather</h2>
           </div>
           <div class="research-grid">
             <article class="research-card">
               <span class="card-index">01</span>
-              <h3>Mechanism of Solar Eruptions</h3>
-              <p>
-                Solar eruptions, including flares and coronal mass ejections (CMEs), are the primary drivers of space weather near Earth. We investigate their properties and underlying mechanisms.
+              <h3 data-i18n="researchCard1Title">Mechanism of Solar Eruptions</h3>
+              <p data-i18n="researchCard1Text">
+                Solar eruptions, including flares and coronal mass ejections (CMEs), are the primary drivers of space weather. We investigate their properties and underlying mechanisms.
               </p>
             </article>
             <article class="research-card">
               <span class="card-index">02</span>
-              <h3>Solar-Stellar Connection</h3>
-              <p>
+              <h3 data-i18n="researchCard2Title">Solar-Stellar Connection</h3>
+              <p data-i18n="researchCard2Text">
                 Using the Sun as a benchmark, we explore how CMEs occur on other stars, how their properties vary across different stellar types, and how they can be identified through observations.
               </p>
             </article>
             <article class="research-card">
               <span class="card-index">03</span>
-              <h3>Exoplanetary Space Weather</h3>
-              <p>
-                Through numerical simulions, we investigate how stellar CMEs on different stars shape exoplanetary space-weather environments and assess their impact on the habitability.
+              <h3 data-i18n="researchCard3Title">Exoplanetary Space Weather</h3>
+              <p data-i18n="researchCard3Text">
+                Through numerical simulations, we investigate how stellar CMEs shape exoplanetary space-weather environments and assess their impact on the habitability.
               </p>
             </article>
           </div>
@@ -141,39 +153,39 @@
 
         <section id="publications" class="section-block publications">
           <div class="section-heading">
-            <p class="eyebrow">Publications</p>
-            <h2>Selected work</h2>
+            <p class="eyebrow" data-i18n="publicationsEyebrow">Publications</p>
+            <h2 data-i18n="publicationsTitle">Selected works</h2>
           </div>
           <ol class="publication-list">
             <li>
-              <a href="https://iopscience.iop.org/article/10.3847/1538-4357/adf18b/meta" target="_blank" rel="noreferrer">
+              <a href="https://iopscience.iop.org/article/10.3847/1538-4357/adf18b/meta" target="_blank" rel="noreferrer" data-i18n="pubSelected1">
                 Current Helicity in Response to Coronal Mass Ejections
               </a>
               <span>The Astrophysical Journal, 990, 45 · 2025</span>
             </li>
             <li>
-              <a href="https://www.aanda.org/articles/aa/abs/2024/06/aa48734-23/aa48734-23.html" target="_blank" rel="noreferrer">
+              <a href="https://www.aanda.org/articles/aa/abs/2024/06/aa48734-23/aa48734-23.html" target="_blank" rel="noreferrer" data-i18n="pubSelected2">
                 Magnetic Helicity Evolution during Active Region Emergence and Subsequent Flare Productivity
               </a>
               <span>Astronomy &amp; Astrophysics, 686, A148 · 2024</span>
             </li>
             <li>
-              <a href="https://iopscience.iop.org/article/10.3847/2041-8213/ac9aff/meta" target="_blank" rel="noreferrer">
+              <a href="https://iopscience.iop.org/article/10.3847/2041-8213/ac9aff/meta" target="_blank" rel="noreferrer" data-i18n="pubSelected3">
                 Cross-loop Propagation of a Quasiperiodic Extreme-Ultraviolet Wave Train
               </a>
               <span>The Astrophysical Journal Letters, 939, L18 · 2022</span>
             </li>
           </ol>
-          <button class="expand-button" type="button" data-toggle="all-publications" aria-expanded="false">
+          <button class="expand-button" type="button" data-toggle="all-publications" data-i18n="seeMore" aria-expanded="false">
             See more &gt;&gt;
           </button>
           <div id="all-publications" class="expand-panel" hidden>
-            <h3>First-author publications</h3>
+            <h3 data-i18n="firstAuthorPublications">First-author publications</h3>
             <ol class="compact-list">
               <li><strong>Sun, Z.</strong>, Alvarado-Gómez, J.D., Tian, H., et al. (2025). A Stellar Coronal Mass Ejection Candidate Detected on the Young Solar-Type Star DS Tucana A with VLT/ESPRESSO. Submitted to <em>The Astrophysical Journal</em>.</li>
               <li><strong>Sun, Z.</strong>, Alvarado-Gómez, J.D., Tian, H., et al. (2025). How Magnetic Field Strength Governs Stellar Coronal Mass Ejection Dynamics: A Parametric Study. Submitted to <em>The Astrophysical Journal</em>.</li>
               <li><strong>Sun, Z.</strong>, Alvarado-Gómez, J.D., Tian, H., et al. (2025). Intense but Harmless: Space Weather around an M dwarf. Submitted to <em>The Astrophysical Journal</em>.</li>
-              <li><strong>Sun, Z.</strong>, Alvarado-Gómez, J.D., Tian, H., et al. (2025). Fine-scale downflows above flare ribbons captured by Solar Orbiter/EUI. Submitted to <em>Astronomy &amp; Astrophysics</em>.</li>
+              <li><strong>Sun, Z.</strong>, Alvarado-Gómez, J.D., Tian, H., et al. (2025). <a href="https://arxiv.org/abs/2606.19335" target="_blank" rel="noreferrer">Fine-scale downflows above flare ribbons captured by Solar Orbiter/EUI</a>. Accepted by <em>Astronomy &amp; Astrophysics</em>.</li>
               <li><strong>Z. Sun</strong>, T. Li, X. Bian, et al. (2025). <a href="https://iopscience.iop.org/article/10.3847/1538-4357/adf18b/meta" target="_blank" rel="noreferrer">Current Helicity in Response to Coronal Mass Ejections</a>. <em>The Astrophysical Journal</em>, 990, 45.</li>
               <li><strong>Z. Sun</strong>, H. Tian, T. Li, et al. (2024). <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ad738d" target="_blank" rel="noreferrer">Fast Downflows Observed during a Polar Crown Filament Eruption</a>. <em>The Astrophysical Journal</em>, 974, 205.</li>
               <li><strong>Z. Sun</strong>, T. Li, Y. Hou, et al. (2024). <a href="https://link.springer.com/article/10.1007/s11207-024-02329-4" target="_blank" rel="noreferrer">The Origin of an Intense Geomagnetic Storm on 2023 December 1st</a>. <em>Solar Physics</em>, 299.</li>
@@ -181,9 +193,9 @@
               <li><strong>Z. Sun</strong>, T. Li, H. Tian, et al. (2023). <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ace5b1/meta" target="_blank" rel="noreferrer">Observation of Two Splitting Processes in a Partial Filament Eruption on the Sun</a>. <em>The Astrophysical Journal</em>, 953, 148.</li>
               <li><strong>Z. Sun</strong>, H. Tian, P. F. Chen, et al. (2022). <a href="https://iopscience.iop.org/article/10.3847/2041-8213/ac9aff/meta" target="_blank" rel="noreferrer">Cross-loop Propagation of a Quasiperiodic Extreme-Ultraviolet Wave Train</a>. <em>The Astrophysical Journal Letters</em>, 939, L18.</li>
             </ol>
-            <h3>Co-authored publications</h3>
+            <h3 data-i18n="coauthoredPublications">Co-authored publications</h3>
             <ol class="compact-list">
-              <li>Z. Wu, T. Van Doorsselaere, J. He, ..., &amp; <strong>Z. Sun</strong>. (2026). Imaging Magnetically Driven Astrosphere. Accepted by <em>The Astrophysical Journal Letters</em>.</li>
+              <li>Z. Wu, T. Van Doorsselaere, J. He, ..., &amp; <strong>Z. Sun</strong>. (2026). <a href="https://arxiv.org/abs/2604.00925" target="_blank" rel="noreferrer">Imaging Magnetically Driven Astrospheres: A Forward Modelling Approach</a>. Accepted by <em>The Astrophysical Journal Letters</em>.</li>
               <li>X. Duan, T. Li, Y. Cui, ... &amp; <strong>Z. Sun</strong>. (2026). <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ae63bb" target="_blank" rel="noreferrer">Solar Energetic Particle Events and Associated Type II Radio Bursts from Different Source Regions</a>. <em>The Astrophysical Journal</em>, 1003, 53.</li>
               <li>F. Qiao, H. Li, J. Wang, Y. Duan, <strong>Z. Sun</strong>, et al. (2025). <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ae4bd9" target="_blank" rel="noreferrer">Fine Structure and Formation Mechanism of a Sunspot Bipolar Light Bridge in NOAA AR 13663</a>. <em>The Astrophysical Journal</em>, 1000, 205.</li>
               <li>Y. Duan, X. Yan, J. Hong, ..., <strong>Z. Sun</strong>, et al. (2025). <a href="https://www.aanda.org/articles/aa/abs/2026/02/aa57158-25/aa57158-25.html" target="_blank" rel="noreferrer">Resolving Interchange Reconnection Dynamics in a Fan-Spine-like Topology Observed by Solar Orbiter</a>. <em>Astronomy &amp; Astrophysics</em>, 706, A1.</li>
@@ -204,70 +216,52 @@
 
         <section id="experience" class="section-block split-section">
           <div class="section-heading">
-            <p class="eyebrow">Experience</p>
-            <h2>Observations, operations, and data pipelines.</h2>
+            <p class="eyebrow" data-i18n="experienceEyebrow">Experience</p>
+            <h2 data-i18n="experienceTitle">Observations</h2>
           </div>
           <div class="timeline">
             <article>
               <time>Jul. 2026</time>
-              <h3>Solar Flare Observations with VTT</h3>
-              <p>Observer · Teide Observatory, Tenerife, Spain</p>
+              <h3 data-i18n="experience1Title">Solar Flare Observations with Vacuum Tower Telescope (VTT)</h3>
+              <p data-i18n="experience1Text">Observer · Teide Observatory, Tenerife, Spain</p>
             </article>
             <article>
               <time>Dec. 2025</time>
-              <h3>Stellar Spectropolarimetric Observations with HARPSpol</h3>
-              <p>Observer · PHAME Survey, La Silla Observatory, Chile</p>
+              <h3 data-i18n="experience2Title">Stellar Spectropolarimetric Observations with HARPSpol</h3>
+              <p data-i18n="experience2Text">Observer · La Silla Observatory, Chile</p>
             </article>
-            <button class="expand-button inline" type="button" data-toggle="all-experience" aria-expanded="false">
-              See more &gt;&gt;
-            </button>
-            <div id="all-experience" class="expand-panel compact" hidden>
-              <article>
-                <time>Nov. 2022 - Sep. 2024</time>
-                <h3>Remote Operations of Solar Upper Transition Region Imager (SUTRI)</h3>
-                <p>Operator · National Astronomical Observatories, Chinese Academy of Sciences</p>
-              </article>
-              <article>
-                <time>Sep. 2022 - Jul. 2024</time>
-                <h3>Solar EUV Data Processing Pipeline Development for FengYun-3E</h3>
-                <p>Contributor · China Meteorological Administration</p>
-              </article>
-              <article>
-                <time>Jun. 2021 - Jul. 2021</time>
-                <h3>Geophysical Field Survey</h3>
-                <p>Student Researcher · Liujiang Basin, Qinhuangdao, China</p>
-              </article>
-            </div>
+            
+            
           </div>
         </section>
 
         <section id="talks" class="section-block talks-panel">
           <div class="section-heading">
-            <p class="eyebrow">Talks</p>
-            <h2>Recent conference contributions</h2>
+            <p class="eyebrow" data-i18n="talksEyebrow">Presentations</p>
+            <h2 data-i18n="talksTitle">Recent conference talks</h2>
           </div>
           <div class="talk-grid">
             <article>
-              <span>2026</span>
-              <h3>Space Weather around M dwarfs: Role of Coronal Mass Ejections</h3>
-              <p>IAU Symposium 408 · COSPAR · EAS Annual Meeting</p>
+              <span>Jul. 2026</span>
+              <h3 data-i18n="talk1Title">Space Weather around M dwarfs: Role of Coronal Mass Ejections</h3>
+              <p data-i18n="talk1Text">EAS Annual Meeting 2026· Lausanne, Switzerland</p>
             </article>
             <article>
-              <span>2026</span>
-              <h3>Current Helicity Reversal during Coronal Mass Ejections</h3>
-              <p>EGU General Assembly · Vienna, Austria</p>
+              <span>May 2026</span>
+              <h3 data-i18n="talk2Title">Current Helicity Reversal during Coronal Mass Ejections</h3>
+              <p data-i18n="talk2Text">EGU General Assembly · Vienna, Austria</p>
             </article>
             <article>
-              <span>2025</span>
-              <h3>Space Weather around Moderately-rotating Fully Convective M-dwarfs</h3>
-              <p>Berlin Early-career Space Research Conference · IAU Symposium 400 · EAS</p>
+              <span>Oct. 2025</span>
+              <h3 data-i18n="talk3Title">Space Weather around Moderately-rotating Fully Convective M-dwarfs</h3>
+              <p data-i18n="talk3Text">Berlin Early-career Space Research Conference 2025 · Berlin, Germany</p>
             </article>
           </div>
-          <button class="expand-button" type="button" data-toggle="all-talks" aria-expanded="false">
+          <button class="expand-button" type="button" data-toggle="all-talks" data-i18n="seeMore" aria-expanded="false">
             See more &gt;&gt;
           </button>
           <div id="all-talks" class="expand-panel" hidden>
-            <h3>Contributed talks</h3>
+            <h3 data-i18n="contributedTalks">Contributed talks</h3>
             <ol class="compact-list">
               <li>IAU Symposium 408, Liege, Belgium, Aug. 17-21, 2026. Space Weather around M dwarfs: Role of Coronal Mass Ejections.</li>
               <li>46th COSPAR Scientific Assembly, Florence, Italy, Aug. 1-9, 2026. Space Weather around M dwarfs: Role of Coronal Mass Ejections.</li>
@@ -286,7 +280,7 @@ Corona, Beijing, China, Dec. 4-8, 2023. Cross-loop EUV Wave Train Triggered by S
               <li>National Solar Physics Meeting, Chengdu, China, Jun. 7-11, 2023. Cross-loop EUV Wave Train Triggered by Successive Stretching of Magnetic Field Structures.</li>
               <li>Workshop on Waves in the Solar and Stellar Atmosphere, online, Apr. 4, 2023. Cross-loop EUV Wave Train Triggered by Successive Stretching of Magnetic Field Structures.</li>
             </ol>
-            <h3>Posters</h3>
+            <h3 data-i18n="posters">Posters</h3>
             <ol class="compact-list">
               <li>Cool Stars 23, Tokyo, Japan, Jun. 15-19, 2026. Space Weather around M dwarfs: Role of Coronal Mass Ejections.</li>
               <li>Solar Orbiter Workshop, Berlin, Germany, Mar. 16-19, 2026. Fine-scale Downflows Above Flare Ribbons Captured by Solar Orbiter/EUI.</li>
@@ -302,11 +296,12 @@ Corona, Beijing, China, Dec. 4-8, 2023. Cross-loop EUV Wave Train Triggered by S
             <img class="contact-sun" src="assets/images/nasa/sdo-sun.jpg" alt="" />
           </div>
           <div class="contact-content">
-            <p class="eyebrow">Contact</p>
-            <h2>Open to collaborations on solar-stellar eruptions and exoplanetary space weather.</h2>
+            <p class="eyebrow" data-i18n="contactEyebrow">Contact</p>
+            <h2 data-i18n="contactTitle">Open to collaborations on solar-stellar eruptions and exoplanetary space weather.</h2>
             <div class="contact-links">
               <a href="mailto:zhsun@aip.de">zhsun@aip.de</a>
               <a href="https://scholar.google.com/citations?user=lBU4pfsAAAAJ&hl=zh-CN" target="_blank" rel="noreferrer">Google Scholar</a>
+              <a href="https://www.researchgate.net/profile/Zheng-Sun-27?ev=hdr_xprf" target="_blank" rel="noreferrer">ResearchGate</a>
               <a href="https://orcid.org/0000-0001-5657-7587" target="_blank" rel="noreferrer">ORCID</a>
             </div>
           </div>

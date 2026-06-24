@@ -4,6 +4,171 @@ const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").match
 let stars = [];
 let dust = [];
 let animationFrame;
+let currentLanguage = getSavedLanguage();
+
+const translations = {
+  en: {
+    navResearch: "Research",
+    navPublications: "Publications",
+    navExperience: "Experience",
+    navPresentations: "Presentations",
+    navContact: "Contact",
+    heroEyebrow: "Space Science · Astrophysics",
+    heroLede:
+      "Ph.D. candidate at Peking University in China and visiting student at the Leibniz Institute for Astrophysics Potsdam (AIP) in Germany, studying solar and stellar eruptions, and space weather environments around exoplanets.",
+    email: "Email",
+    rolePhd: "Ph.D. Candidate, Peking University",
+    rolePhdMeta: "Space Physics<br>Sep 2022 -- Now",
+    roleAip: "Visiting Student, AIP",
+    roleAipMeta: "Stellar Physics and Exoplanets<br>Nov 2024 -- Now",
+    metricFirstAuthor: "first-author papers",
+    metricPublications: "publications",
+    metricTalks: "conference talks",
+    metricFunding: "Funding",
+    researchEyebrow: "Research",
+    researchTitle: "Connecting solar eruptions to exoplanetary space weather",
+    researchCard1Title: "Mechanism of Solar Eruptions",
+    researchCard1Text:
+      "Solar eruptions, including flares and coronal mass ejections (CMEs), are the primary drivers of space weather. We investigate their properties and underlying mechanisms.",
+    researchCard2Title: "Solar-Stellar Connection",
+    researchCard2Text:
+      "Using the Sun as a benchmark, we explore how CMEs occur on other stars, how their properties vary across different stellar types, and how they can be identified through observations.",
+    researchCard3Title: "Exoplanetary Space Weather",
+    researchCard3Text:
+      "Through numerical simulations, we investigate how stellar CMEs shape exoplanetary space-weather environments and assess their impact on the habitability.",
+    publicationsEyebrow: "Publications",
+    publicationsTitle: "Selected works",
+    pubSelected1: "Current Helicity in Response to Coronal Mass Ejections",
+    pubSelected2: "Magnetic Helicity Evolution during Active Region Emergence and Subsequent Flare Productivity",
+    pubSelected3: "Cross-loop Propagation of a Quasiperiodic Extreme-Ultraviolet Wave Train",
+    firstAuthorPublications: "First-author publications",
+    coauthoredPublications: "Co-authored publications",
+    experienceEyebrow: "Experience",
+    experienceTitle: "Observations",
+    experience1Title: "Solar Flare Observations with Vacuum Tower Telescope (VTT)",
+    experience1Text: "Observer · Teide Observatory, Tenerife, Spain",
+    experience2Title: "Stellar Spectropolarimetric Observations with HARPSpol",
+    experience2Text: "Observer · La Silla Observatory, Chile",
+    talksEyebrow: "Presentations",
+    talksTitle: "Recent conference talks",
+    talk1Title: "Space Weather around M dwarfs: Role of Coronal Mass Ejections",
+    talk1Text: "EAS Annual Meeting 2026· Lausanne, Switzerland",
+    talk2Title: "Current Helicity Reversal during Coronal Mass Ejections",
+    talk2Text: "EGU General Assembly · Vienna, Austria",
+    talk3Title: "Space Weather around Moderately-rotating Fully Convective M-dwarfs",
+    talk3Text: "Berlin Early-career Space Research Conference 2025 · Berlin, Germany",
+    contributedTalks: "Contributed talks",
+    posters: "Posters",
+    contactEyebrow: "Contact",
+    contactTitle: "Open to collaborations on solar-stellar eruptions and exoplanetary space weather.",
+    seeMore: "See more >>",
+    showLess: "Show less",
+  },
+  zh: {
+    navResearch: "研究",
+    navPublications: "论文",
+    navExperience: "经历",
+    navPresentations: "报告",
+    navContact: "联系",
+    heroEyebrow: "空间科学 · 天体物理",
+    heroLede:
+      "北京大学空间物理博士研究生，现为德国莱布尼茨波茨坦天体物理研究所（AIP）访问学生。研究方向包括太阳与恒星爆发，以及系外行星周围的空间天气环境。",
+    email: "邮件",
+    rolePhd: "博士研究生，北京大学",
+    rolePhdMeta: "空间物理<br>2022 年 9 月至今",
+    roleAip: "访问学生，AIP",
+    roleAipMeta: "恒星物理与系外行星<br>2024 年 11 月至今",
+    metricFirstAuthor: "第一作者论文",
+    metricPublications: "发表论文",
+    metricTalks: "会议报告",
+    metricFunding: "科研资助",
+    researchEyebrow: "研究",
+    researchTitle: "连接太阳爆发与系外行星空间天气",
+    researchCard1Title: "太阳爆发的机制与性质",
+    researchCard1Text:
+      "太阳爆发包括耀斑和日冕物质抛射（CME），是驱动空间天气的关键过程。我们研究这些爆发的物理性质及其背后的触发机制。",
+    researchCard2Title: "太阳-恒星联系",
+    researchCard2Text:
+      "以太阳为基准，我们探索其他恒星上的 CME 可能如何发生、其性质如何随恒星类型变化，以及如何通过观测识别这些爆发现象。",
+    researchCard3Title: "恒星爆发与系外行星空间天气",
+    researchCard3Text:
+      "通过数值模拟，我们研究恒星 CME 如何塑造系外行星周围的空间天气环境，并评估其对行星宜居性的影响。",
+    publicationsEyebrow: "论文",
+    publicationsTitle: "代表性工作",
+    pubSelected1: "日冕物质抛射过程中的电流螺度响应",
+    pubSelected2: "活动区浮现及后续耀斑产出过程中的磁螺度演化",
+    pubSelected3: "准周期极紫外波列的跨环传播",
+    firstAuthorPublications: "第一作者论文",
+    coauthoredPublications: "合作论文",
+    experienceEyebrow: "经历",
+    experienceTitle: "观测经历",
+    experience1Title: "使用真空塔太阳望远镜（VTT）开展太阳耀斑观测",
+    experience1Text: "观测员 · 西班牙特内里费岛泰德天文台",
+    experience2Title: "使用 HARPSpol 开展恒星光谱偏振观测",
+    experience2Text: "观测员 · 智利拉西拉天文台",
+    talksEyebrow: "报告",
+    talksTitle: "近期会议报告",
+    talk1Title: "M 矮星周围的空间天气：日冕物质抛射的作用",
+    talk1Text: "EAS Annual Meeting 2026 · 瑞士洛桑",
+    talk2Title: "日冕物质抛射过程中的电流螺度反转",
+    talk2Text: "EGU General Assembly · 奥地利维也纳",
+    talk3Title: "中等自转全对流 M 矮星周围的空间天气",
+    talk3Text: "Berlin Early-career Space Research Conference 2025 · 德国柏林",
+    contributedTalks: "会议报告",
+    posters: "墙报展示",
+    contactEyebrow: "联系",
+    contactTitle: "欢迎就太阳-恒星爆发和系外行星空间天气开展合作。",
+    seeMore: "查看更多 >>",
+    showLess: "收起",
+  },
+};
+
+function textFor(key) {
+  return translations[currentLanguage][key] || translations.en[key] || "";
+}
+
+function getSavedLanguage() {
+  try {
+    return localStorage.getItem("siteLanguage") === "zh" ? "zh" : "en";
+  } catch {
+    return "en";
+  }
+}
+
+function updateToggleButton(button) {
+  const isExpanded = button.getAttribute("aria-expanded") === "true";
+  button.textContent = textFor(isExpanded ? "showLess" : "seeMore");
+}
+
+function applyLanguage(language) {
+  currentLanguage = language;
+  document.documentElement.lang = language === "zh" ? "zh-CN" : "en";
+  try {
+    localStorage.setItem("siteLanguage", language);
+  } catch {
+    // Ignore storage failures; the toggle should still work for the current page.
+  }
+
+  document.querySelectorAll("[data-i18n]").forEach((element) => {
+    if (element.matches("[data-toggle]")) {
+      updateToggleButton(element);
+      return;
+    }
+
+    const value = textFor(element.dataset.i18n);
+    if (value.includes("<")) {
+      element.innerHTML = value;
+    } else {
+      element.textContent = value;
+    }
+  });
+
+  const languageToggle = document.querySelector("[data-language-toggle]");
+  if (languageToggle) {
+    languageToggle.textContent = language === "zh" ? "EN" : "中文";
+    languageToggle.setAttribute("aria-label", language === "zh" ? "Switch to English" : "切换到中文");
+  }
+}
 
 function resizeStarfield() {
   if (!canvas || !ctx) return;
@@ -133,6 +298,10 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
   });
 });
 
+document.querySelector("[data-language-toggle]")?.addEventListener("click", () => {
+  applyLanguage(currentLanguage === "en" ? "zh" : "en");
+});
+
 document.querySelectorAll("[data-toggle]").forEach((button) => {
   const target = document.getElementById(button.dataset.toggle);
   if (!target) return;
@@ -141,7 +310,7 @@ document.querySelectorAll("[data-toggle]").forEach((button) => {
     const willOpen = target.hidden;
     target.hidden = !willOpen;
     button.setAttribute("aria-expanded", String(willOpen));
-    button.textContent = willOpen ? "Show less" : "See more >>";
+    updateToggleButton(button);
 
     if (willOpen) {
       target.classList.add("is-visible");
@@ -149,3 +318,5 @@ document.querySelectorAll("[data-toggle]").forEach((button) => {
     }
   });
 });
+
+applyLanguage(currentLanguage);
