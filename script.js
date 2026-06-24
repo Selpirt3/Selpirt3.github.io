@@ -104,7 +104,7 @@ const translations = {
 
     heroEyebrow: "空间物理学 · 天体物理学",
     heroLede:
-      "北京大学空间物理学博士研究生，现为德国莱布尼茨波茨坦天体物理研究所（AIP）访问学生。研究方向包括太阳与恒星爆发，以及系外行星周围的空间天气环境。",
+      "北京大学空间物理学博士研究生，现为德国莱布尼茨天体物理研究所（AIP）访问学生。研究方向包括太阳与恒星爆发，以及系外行星周围的空间天气环境。",
     email: "邮件",
 
     rolePhd: "博士研究生，北京大学",
@@ -158,7 +158,7 @@ const translations = {
     experience1Title: "使用真空塔太阳望远镜（VTT）开展太阳耀斑观测",
     experience1Text: "观测员 · 西班牙特内里费岛泰德天文台",
     experience2Title: "使用 HARPSpol 开展恒星光谱偏振观测",
-    experience2Text: "观测员 · 智利拉西拉天文台",
+    experience2Text: "观测员 · 智利拉西亚天文台",
 
     talksEyebrow: "报告",
     talksTitle: "近期会议报告",
