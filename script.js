@@ -17,7 +17,7 @@ const translations = {
 
     heroEyebrow: "Space Science · Astrophysics",
     heroLede:
-      "Ph.D. candidate at Peking University in China and visiting student at the Leibniz Institute for Astrophysics Potsdam (AIP) in Germany, studying solar and stellar magnetic eruptions, and space weather environments around exoplanets.",
+      "Ph.D. candidate at Peking University in China and visiting student at the Leibniz Institute for Astrophysics Potsdam (AIP) in Germany, studying solar-stellar magnetic eruptions, and space weather environments around exoplanets.",
     email: "Email",
 
     rolePhd: "Ph.D. Candidate, Peking University",
