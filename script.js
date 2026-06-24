@@ -34,13 +34,13 @@ const translations = {
     researchTitle: "Connecting solar eruptions to exoplanetary space weather",
     researchCard1Title: "Mechanism of Solar Eruptions",
     researchCard1Text:
-      "Solar eruptions, including flares and coronal mass ejections (CMEs), are the primary drivers of space weather. We investigate their properties and underlying physical mechanisms.",
+      "Solar eruptions, including flares and coronal mass ejections (CMEs), are the primary drivers of space weather. We investigate their properties and underlying mechanisms.",
     researchCard2Title: "Solar-Stellar Connection",
     researchCard2Text:
-      "Using the Sun as a benchmark, we explore how CMEs occur on other stars, how their properties vary across different stellar types, and how they can be detected through observations.",
+      "Using the Sun as a benchmark, we explore how CMEs occur on other stars, how their properties vary across different stellar types, and how they can be identified through observations.",
     researchCard3Title: "Exoplanetary Space Weather",
     researchCard3Text:
-      "Through numerical simulations, we investigate how stellar CMEs shape exoplanetary space-weather environments and assess their impact on planetary atmospheres, magnetospheres, and habitability.",
+      "Through numerical simulations, we investigate how stellar CMEs shape exoplanetary space-weather environments and assess their impact on the habitability.",
 
     publicationsEyebrow: "Publications",
     publicationsTitle: "Selected works",
@@ -118,7 +118,7 @@ const translations = {
     metricFunding: "科研资助",
 
     researchEyebrow: "研究",
-    researchTitle: "将太阳爆发物理扩展到系外行星空间天气",
+    researchTitle: "从太阳爆发到系外行星空间天气",
     researchCard1Title: "太阳爆发的机制与性质",
     researchCard1Text:
       "太阳爆发包括耀斑和日冕物质抛射（CME），是驱动空间天气的关键过程。我们研究这些爆发的物理性质及其背后的物理机制。",
@@ -127,7 +127,7 @@ const translations = {
       "以太阳为基准，我们探索其他恒星上的 CME 可能如何发生、其性质如何随恒星类型变化，以及如何通过观测探测这些爆发现象。",
     researchCard3Title: "系外行星空间天气",
     researchCard3Text:
-      "通过数值模拟，我们研究恒星 CME 如何塑造系外行星周围的空间天气环境，并评估其对行星大气、磁层和宜居性的影响。",
+      "通过数值模拟，我们研究恒星 CME 如何塑造系外行星周围的空间天气环境，并评估其对系外行星宜居性的影响。",
 
     publicationsEyebrow: "论文",
     publicationsTitle: "代表性工作",
