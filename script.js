@@ -102,13 +102,13 @@ const translations = {
     navPresentations: "报告",
     navContact: "联系",
 
-    heroEyebrow: "空间科学 · 天体物理",
+    heroEyebrow: "空间物理学 · 天体物理学",
     heroLede:
-      "北京大学空间物理博士研究生，现为德国莱布尼茨波茨坦天体物理研究所（AIP）访问学生。研究方向包括太阳与恒星爆发，以及系外行星周围的空间天气环境。",
+      "北京大学空间物理学博士研究生，现为德国莱布尼茨波茨坦天体物理研究所（AIP）访问学生。研究方向包括太阳与恒星爆发，以及系外行星周围的空间天气环境。",
     email: "邮件",
 
     rolePhd: "博士研究生，北京大学",
-    rolePhdMeta: "空间物理<br>2022 年 9 月至今",
+    rolePhdMeta: "空间物理学<br>2022 年 9 月至今",
     roleAip: "访问学生，AIP",
     roleAipMeta: "恒星物理与系外行星<br>2024 年 11 月至今",
 
@@ -140,7 +140,7 @@ const translations = {
     achievementsEyebrow: "成就",
     achievementsTitle: "科研资助与荣誉",
     fundingLabel: "科研资助",
-    fundingTitle: "国家自然科学基金博士生基础研究项目",
+    fundingTitle: "国自然青年学生基础研究项目（博士研究生）",
     fundingRole: "项目负责人（PI）",
     fundingMeta: "2025–2027 | 30 万元人民币（约 4.2 万美元）",
     fundingDesc:
