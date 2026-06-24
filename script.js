@@ -31,7 +31,7 @@ const translations = {
     metricFunding: "funding",
 
     researchEyebrow: "Research",
-    researchTitle: "Extending solar eruption physics to exoplanetary space weather",
+    researchTitle: "Connecting solar eruptions to exoplanetary space weather",
     researchCard1Title: "Mechanism of Solar Eruptions",
     researchCard1Text:
       "Solar eruptions, including flares and coronal mass ejections (CMEs), are the primary drivers of space weather. We investigate their properties and underlying physical mechanisms.",
