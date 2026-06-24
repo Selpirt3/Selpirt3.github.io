@@ -389,13 +389,16 @@ h3 {
 }
 
 .research-grid,
-.talk-grid {
+.talk-grid,
+.award-list {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
 }
 
 .research-card,
+.achievement-card,
+.award-card,
 .talk-grid article,
 .timeline article {
   border: 1px solid var(--line);
@@ -407,6 +410,68 @@ h3 {
 .research-card {
   min-height: 272px;
   padding: 26px;
+}
+
+.achievement-layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.92fr) minmax(0, 1.38fr);
+  gap: 16px;
+  align-items: stretch;
+}
+
+.achievement-card {
+  min-height: 100%;
+  padding: 28px;
+  background:
+    radial-gradient(circle at 18% 10%, rgba(216, 183, 101, 0.16), transparent 34%),
+    linear-gradient(135deg, rgba(216, 183, 101, 0.1), rgba(103, 215, 212, 0.035)),
+    var(--panel-strong);
+}
+
+.achievement-card h3 {
+  max-width: 640px;
+  margin-bottom: 18px;
+  font-family: var(--serif);
+  font-size: clamp(1.45rem, 3vw, 2.1rem);
+  line-height: 1.08;
+}
+
+.achievement-card p {
+  color: var(--muted);
+}
+
+.achievement-role {
+  margin-bottom: 4px;
+  color: var(--text) !important;
+  font-weight: 800;
+}
+
+.achievement-meta {
+  margin-bottom: 18px;
+  color: var(--gold) !important;
+  font-weight: 800;
+}
+
+.award-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.award-card {
+  min-height: 118px;
+  padding: 20px;
+}
+
+.award-card time {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--gold);
+  font-family: var(--serif);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.award-card h3 {
+  margin-bottom: 0;
 }
 
 .card-index,
@@ -421,6 +486,7 @@ h3 {
 }
 
 .research-card p,
+.award-card h3,
 .talk-grid p,
 .timeline p {
   color: var(--muted);
@@ -708,8 +774,13 @@ h3 {
 
   .metrics,
   .research-grid,
+  .achievement-layout,
   .talk-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .achievement-layout {
+    grid-template-columns: 1fr;
   }
 
   .publication-list li {
@@ -755,6 +826,7 @@ h3 {
 
   .metrics,
   .research-grid,
+  .award-list,
   .talk-grid {
     grid-template-columns: 1fr;
   }

@@ -10,89 +10,125 @@ const translations = {
   en: {
     navResearch: "Research",
     navPublications: "Publications",
+    navAchievements: "Achievements",
     navExperience: "Experience",
     navPresentations: "Presentations",
     navContact: "Contact",
+
     heroEyebrow: "Space Science · Astrophysics",
     heroLede:
       "Ph.D. candidate at Peking University in China and visiting student at the Leibniz Institute for Astrophysics Potsdam (AIP) in Germany, studying solar and stellar eruptions, and space weather environments around exoplanets.",
     email: "Email",
+
     rolePhd: "Ph.D. Candidate, Peking University",
     rolePhdMeta: "Space Physics<br>Sep 2022 -- Now",
     roleAip: "Visiting Student, AIP",
     roleAipMeta: "Stellar Physics and Exoplanets<br>Nov 2024 -- Now",
+
     metricFirstAuthor: "first-author papers",
     metricPublications: "publications",
     metricTalks: "conference talks",
-    metricFunding: "Funding",
+    metricFunding: "funding",
+
     researchEyebrow: "Research",
-    researchTitle: "Connecting solar eruptions to exoplanetary space weather",
+    researchTitle: "Extending solar eruption physics to exoplanetary space weather",
     researchCard1Title: "Mechanism of Solar Eruptions",
     researchCard1Text:
-      "Solar eruptions, including flares and coronal mass ejections (CMEs), are the primary drivers of space weather. We investigate their properties and underlying mechanisms.",
+      "Solar eruptions, including flares and coronal mass ejections (CMEs), are the primary drivers of space weather. We investigate their properties and underlying physical mechanisms.",
     researchCard2Title: "Solar-Stellar Connection",
     researchCard2Text:
-      "Using the Sun as a benchmark, we explore how CMEs occur on other stars, how their properties vary across different stellar types, and how they can be identified through observations.",
+      "Using the Sun as a benchmark, we explore how CMEs occur on other stars, how their properties vary across different stellar types, and how they can be detected through observations.",
     researchCard3Title: "Exoplanetary Space Weather",
     researchCard3Text:
-      "Through numerical simulations, we investigate how stellar CMEs shape exoplanetary space-weather environments and assess their impact on the habitability.",
+      "Through numerical simulations, we investigate how stellar CMEs shape exoplanetary space-weather environments and assess their impact on planetary atmospheres, magnetospheres, and habitability.",
+
     publicationsEyebrow: "Publications",
     publicationsTitle: "Selected works",
     pubSelected1: "Current Helicity in Response to Coronal Mass Ejections",
-    pubSelected2: "Magnetic Helicity Evolution during Active Region Emergence and Subsequent Flare Productivity",
-    pubSelected3: "Cross-loop Propagation of a Quasiperiodic Extreme-Ultraviolet Wave Train",
+    pubSelected2:
+      "Magnetic Helicity Evolution during Active Region Emergence and Subsequent Flare Productivity",
+    pubSelected3:
+      "Cross-loop Propagation of a Quasiperiodic Extreme-Ultraviolet Wave Train",
     firstAuthorPublications: "First-author publications",
     coauthoredPublications: "Co-authored publications",
+
+    achievementsEyebrow: "Achievements",
+    achievementsTitle: "Funding and honors",
+    fundingLabel: "Funding",
+    fundingTitle: "NSFC Basic Research Scheme for PhD Students",
+    fundingRole: "Principal Investigator (PI)",
+    fundingMeta: "2025–2027 | ¥300,000 (~US$42,000)",
+    fundingDesc:
+      "Awarded by the National Natural Science Foundation of China (NSFC) to support research on stellar CME dynamics.",
+
+    award1: "National Scholarship<br>¥30k (~US$4.2k)",
+    award2: "National Scholarship<br>¥30k (~US$4.2k)",
+    award3: "Ubiquant Scholarship<br>¥10k (~US$1.4k)",
+    award4: "Greenview Scholarship<br>¥5k (~US$0.7k)",
+    award5: "Silvercorp Scholarship<br>¥12k (~US$1.7k)",
+    award6: "China National Petroleum Corporation Scholarship<br>¥6k (~US$0.85k)",
+
     experienceEyebrow: "Experience",
     experienceTitle: "Observations",
     experience1Title: "Solar Flare Observations with Vacuum Tower Telescope (VTT)",
     experience1Text: "Observer · Teide Observatory, Tenerife, Spain",
     experience2Title: "Stellar Spectropolarimetric Observations with HARPSpol",
     experience2Text: "Observer · La Silla Observatory, Chile",
+
     talksEyebrow: "Presentations",
     talksTitle: "Recent conference talks",
     talk1Title: "Space Weather around M dwarfs: Role of Coronal Mass Ejections",
-    talk1Text: "EAS Annual Meeting 2026· Lausanne, Switzerland",
+    talk1Text: "EAS 2026 · Lausanne, Switzerland",
     talk2Title: "Current Helicity Reversal during Coronal Mass Ejections",
     talk2Text: "EGU General Assembly · Vienna, Austria",
-    talk3Title: "Space Weather around Moderately-rotating Fully Convective M-dwarfs",
+    talk3Title:
+      "Space Weather around Moderately-rotating Fully Convective M dwarfs",
     talk3Text: "IAU Symposium 400 · Medellin, Colombia",
     contributedTalks: "Contributed talks",
     posters: "Posters",
+
     contactEyebrow: "Contact",
-    contactTitle: "Open to collaborations on solar-stellar eruptions and exoplanetary space weather.",
+    contactTitle:
+      "Open to collaborations on solar-stellar eruptions and exoplanetary space weather.",
     seeMore: "See more >>",
     showLess: "Show less",
   },
+
   zh: {
     navResearch: "研究",
     navPublications: "论文",
+    navAchievements: "成就",
     navExperience: "经历",
     navPresentations: "报告",
     navContact: "联系",
+
     heroEyebrow: "空间科学 · 天体物理",
     heroLede:
       "北京大学空间物理博士研究生，现为德国莱布尼茨波茨坦天体物理研究所（AIP）访问学生。研究方向包括太阳与恒星爆发，以及系外行星周围的空间天气环境。",
     email: "邮件",
+
     rolePhd: "博士研究生，北京大学",
     rolePhdMeta: "空间物理<br>2022 年 9 月至今",
     roleAip: "访问学生，AIP",
     roleAipMeta: "恒星物理与系外行星<br>2024 年 11 月至今",
+
     metricFirstAuthor: "第一作者论文",
     metricPublications: "发表论文",
     metricTalks: "会议报告",
     metricFunding: "科研资助",
+
     researchEyebrow: "研究",
-    researchTitle: "连接太阳爆发与系外行星空间天气",
+    researchTitle: "将太阳爆发物理扩展到系外行星空间天气",
     researchCard1Title: "太阳爆发的机制与性质",
     researchCard1Text:
-      "太阳爆发包括耀斑和日冕物质抛射（CME），是驱动空间天气的关键过程。我们研究这些爆发的物理性质及其背后的触发机制。",
+      "太阳爆发包括耀斑和日冕物质抛射（CME），是驱动空间天气的关键过程。我们研究这些爆发的物理性质及其背后的物理机制。",
     researchCard2Title: "太阳-恒星联系",
     researchCard2Text:
-      "以太阳为基准，我们探索其他恒星上的 CME 可能如何发生、其性质如何随恒星类型变化，以及如何通过观测识别这些爆发现象。",
-    researchCard3Title: "恒星爆发与系外行星空间天气",
+      "以太阳为基准，我们探索其他恒星上的 CME 可能如何发生、其性质如何随恒星类型变化，以及如何通过观测探测这些爆发现象。",
+    researchCard3Title: "系外行星空间天气",
     researchCard3Text:
-      "通过数值模拟，我们研究恒星 CME 如何塑造系外行星周围的空间天气环境，并评估其对行星宜居性的影响。",
+      "通过数值模拟，我们研究恒星 CME 如何塑造系外行星周围的空间天气环境，并评估其对行星大气、磁层和宜居性的影响。",
+
     publicationsEyebrow: "论文",
     publicationsTitle: "代表性工作",
     pubSelected1: "日冕物质抛射过程中的电流螺度响应",
@@ -100,27 +136,98 @@ const translations = {
     pubSelected3: "准周期极紫外波列的跨环传播",
     firstAuthorPublications: "第一作者论文",
     coauthoredPublications: "合作论文",
+
+    achievementsEyebrow: "成就",
+    achievementsTitle: "科研资助与荣誉",
+    fundingLabel: "科研资助",
+    fundingTitle: "国家自然科学基金博士生基础研究项目",
+    fundingRole: "项目负责人（PI）",
+    fundingMeta: "2025–2027 | 30 万元人民币（约 4.2 万美元）",
+    fundingDesc:
+      "由国家自然科学基金委员会（NSFC）资助，用于支持恒星日冕物质抛射动力学研究。",
+
+    award1: "国家奖学金<br>3万元",
+    award2: "国家奖学金<br>3万元",
+    award3: "九坤奖学金<br>1万元",
+    award4: "劳雷奖学金<br>5000元",
+    award5: "希尔威矿业奖学金<br>1.2万元",
+    award6: "中国石油奖学金<br>6000元",
+
     experienceEyebrow: "经历",
     experienceTitle: "观测经历",
     experience1Title: "使用真空塔太阳望远镜（VTT）开展太阳耀斑观测",
     experience1Text: "观测员 · 西班牙特内里费岛泰德天文台",
     experience2Title: "使用 HARPSpol 开展恒星光谱偏振观测",
     experience2Text: "观测员 · 智利拉西拉天文台",
+
     talksEyebrow: "报告",
     talksTitle: "近期会议报告",
     talk1Title: "M 矮星周围的空间天气：日冕物质抛射的作用",
-    talk1Text: "EAS Annual Meeting 2026 · 瑞士洛桑",
+    talk1Text: "EAS 2026 · 瑞士洛桑",
     talk2Title: "日冕物质抛射过程中的电流螺度反转",
     talk2Text: "EGU General Assembly · 奥地利维也纳",
     talk3Title: "中等自转全对流 M 矮星周围的空间天气",
     talk3Text: "IAU Symposium 400 · 哥伦比亚麦德林",
     contributedTalks: "会议报告",
     posters: "墙报展示",
+
     contactEyebrow: "联系",
     contactTitle: "欢迎就太阳-恒星爆发和系外行星空间天气开展合作。",
     seeMore: "查看更多 >>",
     showLess: "收起",
   },
+};
+
+const staticTextTranslations = {
+  zh: [
+    ["The Astrophysical Journal Letters", "天体物理学报快报"],
+    ["The Astrophysical Journal", "天体物理学报"],
+    ["Astronomy & Astrophysics", "天文学与天体物理学"],
+    ["A&A", "天文学与天体物理学"],
+
+    ["January", "一月"],
+    ["February", "二月"],
+    ["March", "三月"],
+    ["April", "四月"],
+    ["May", "五月"],
+    ["June", "六月"],
+    ["July", "七月"],
+    ["August", "八月"],
+    ["September", "九月"],
+    ["October", "十月"],
+    ["November", "十一月"],
+    ["December", "十二月"],
+
+    ["Jan.", "一月"],
+    ["Feb.", "二月"],
+    ["Mar.", "三月"],
+    ["Apr.", "四月"],
+    ["Jun.", "六月"],
+    ["Jul.", "七月"],
+    ["Aug.", "八月"],
+    ["Sep.", "九月"],
+    ["Oct.", "十月"],
+    ["Nov.", "十一月"],
+    ["Dec.", "十二月"],
+  ],
+  en: [
+    ["天体物理学报快报", "The Astrophysical Journal Letters"],
+    ["天体物理学报", "The Astrophysical Journal"],
+    ["天文学与天体物理学", "Astronomy & Astrophysics"],
+
+    ["一月", "Jan."],
+    ["二月", "Feb."],
+    ["三月", "Mar."],
+    ["四月", "Apr."],
+    ["五月", "May"],
+    ["六月", "Jun."],
+    ["七月", "Jul."],
+    ["八月", "Aug."],
+    ["九月", "Sep."],
+    ["十月", "Oct."],
+    ["十一月", "Nov."],
+    ["十二月", "Dec."],
+  ],
 };
 
 function textFor(key) {
@@ -140,14 +247,74 @@ function updateToggleButton(button) {
   button.textContent = textFor(isExpanded ? "showLess" : "seeMore");
 }
 
+function updateName(language) {
+  const displayName = language === "zh" ? "孙争" : "Zheng Sun";
+
+  const heroTitle = document.querySelector("#hero-title");
+  if (heroTitle) heroTitle.textContent = displayName;
+
+  const brandName = document.querySelector(".brand span:last-child");
+  if (brandName) brandName.textContent = displayName;
+
+  const portrait = document.querySelector(".portrait-frame img");
+  if (portrait) {
+    portrait.alt =
+      language === "zh" ? "孙争的照片" : "Portrait of Zheng Sun";
+  }
+
+  const brand = document.querySelector(".brand");
+  if (brand) {
+    brand.setAttribute(
+      "aria-label",
+      language === "zh" ? "孙争主页" : "Zheng Sun home"
+    );
+  }
+}
+
+function applyStaticTextTranslations(language) {
+  const replacements = staticTextTranslations[language] || [];
+
+  const walker = document.createTreeWalker(
+    document.body,
+    NodeFilter.SHOW_TEXT,
+    {
+      acceptNode(node) {
+        const parent = node.parentElement;
+        if (!parent) return NodeFilter.FILTER_REJECT;
+        if (["SCRIPT", "STYLE", "NOSCRIPT"].includes(parent.tagName)) {
+          return NodeFilter.FILTER_REJECT;
+        }
+        if (!node.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      },
+    }
+  );
+
+  const textNodes = [];
+  while (walker.nextNode()) {
+    textNodes.push(walker.currentNode);
+  }
+
+  textNodes.forEach((node) => {
+    let text = node.nodeValue;
+    replacements.forEach(([from, to]) => {
+      text = text.split(from).join(to);
+    });
+    node.nodeValue = text;
+  });
+}
+
 function applyLanguage(language) {
   currentLanguage = language;
   document.documentElement.lang = language === "zh" ? "zh-CN" : "en";
+
   try {
     localStorage.setItem("siteLanguage", language);
   } catch {
-    // Ignore storage failures; the toggle should still work for the current page.
+    // Ignore storage failures.
   }
+
+  updateName(language);
 
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     if (element.matches("[data-toggle]")) {
@@ -163,10 +330,15 @@ function applyLanguage(language) {
     }
   });
 
+  applyStaticTextTranslations(language);
+
   const languageToggle = document.querySelector("[data-language-toggle]");
   if (languageToggle) {
     languageToggle.textContent = language === "zh" ? "EN" : "中文";
-    languageToggle.setAttribute("aria-label", language === "zh" ? "Switch to English" : "切换到中文");
+    languageToggle.setAttribute(
+      "aria-label",
+      language === "zh" ? "Switch to English" : "切换到中文"
+    );
   }
 }
 
@@ -175,14 +347,19 @@ function resizeStarfield() {
 
   const pixelRatio = Math.min(window.devicePixelRatio || 1, 2);
   const { innerWidth: width, innerHeight: height } = window;
+
   canvas.width = Math.floor(width * pixelRatio);
   canvas.height = Math.floor(height * pixelRatio);
   canvas.style.width = `${width}px`;
   canvas.style.height = `${height}px`;
   ctx.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
 
-  const starCount = Math.floor(Math.min(360, Math.max(150, (width * height) / 5600)));
-  const dustCount = Math.floor(Math.min(62, Math.max(24, (width * height) / 30000)));
+  const starCount = Math.floor(
+    Math.min(360, Math.max(150, (width * height) / 5600))
+  );
+  const dustCount = Math.floor(
+    Math.min(62, Math.max(24, (width * height) / 30000))
+  );
 
   stars = Array.from({ length: starCount }, (_, index) => ({
     x: Math.random() * width,
@@ -192,7 +369,12 @@ function resizeStarfield() {
     twinkle: Math.random() * Math.PI * 2,
     drift: (Math.random() * 0.05 + 0.012) * (index % 2 ? 1 : -1),
     glow: Math.random() > 0.78,
-    tint: Math.random() > 0.78 ? "warm" : Math.random() > 0.58 ? "cool" : "white",
+    tint:
+      Math.random() > 0.78
+        ? "warm"
+        : Math.random() > 0.58
+          ? "cool"
+          : "white",
   }));
 
   dust = Array.from({ length: dustCount }, () => ({
@@ -232,7 +414,9 @@ function drawStarfield(time = 0) {
       if (star.x > width + 2) star.x = -2;
     }
 
-    const pulse = reduceMotion ? 0 : Math.sin(time * 0.0012 + star.twinkle) * 0.08;
+    const pulse = reduceMotion
+      ? 0
+      : Math.sin(time * 0.0012 + star.twinkle) * 0.08;
     const alpha = Math.max(0.04, star.alpha + pulse);
     const color =
       star.tint === "warm"
@@ -248,7 +432,10 @@ function drawStarfield(time = 0) {
 
     if (star.glow) {
       ctx.beginPath();
-      ctx.fillStyle = color.replace(`${alpha})`, `${Math.min(alpha * 0.22, 0.12)})`);
+      ctx.fillStyle = color.replace(
+        `${alpha})`,
+        `${Math.min(alpha * 0.22, 0.12)})`
+      );
       ctx.arc(star.x, star.y, star.radius * 3.1, 0, Math.PI * 2);
       ctx.fill();
     }
@@ -262,6 +449,7 @@ function drawStarfield(time = 0) {
 if (canvas && ctx) {
   resizeStarfield();
   drawStarfield();
+
   window.addEventListener("resize", () => {
     window.cancelAnimationFrame(animationFrame);
     resizeStarfield();
@@ -270,7 +458,7 @@ if (canvas && ctx) {
 }
 
 const revealTargets = document.querySelectorAll(
-  ".metrics, .research-card, .publication-list li, .timeline article, .talk-grid article, .expand-panel",
+  ".metrics, .research-card, .achievement-card, .award-card, .publication-list li, .timeline article, .talk-grid article, .expand-panel"
 );
 
 revealTargets.forEach((target) => target.classList.add("reveal"));
@@ -284,7 +472,7 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { rootMargin: "0px 0px -12% 0px", threshold: 0.12 },
+  { rootMargin: "0px 0px -12% 0px", threshold: 0.12 }
 );
 
 revealTargets.forEach((target) => observer.observe(target));
@@ -293,6 +481,7 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
   link.addEventListener("click", (event) => {
     const target = document.querySelector(link.getAttribute("href"));
     if (!target) return;
+
     event.preventDefault();
     target.scrollIntoView({ behavior: "smooth", block: "start" });
   });
@@ -314,7 +503,9 @@ document.querySelectorAll("[data-toggle]").forEach((button) => {
 
     if (willOpen) {
       target.classList.add("is-visible");
-      target.querySelectorAll(".reveal").forEach((item) => item.classList.add("is-visible"));
+      target
+        .querySelectorAll(".reveal")
+        .forEach((item) => item.classList.add("is-visible"));
     }
   });
 });
