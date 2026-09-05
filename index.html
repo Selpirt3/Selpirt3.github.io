@@ -40,9 +40,6 @@
             <a href="#talks" data-i18n="navPresentations">Presentations</a>
             <a href="#contact" data-i18n="navContact">Contact</a>
           </nav>
-          <button class="language-toggle" type="button" data-language-toggle aria-label="Switch language">
-            中文
-          </button>
         </div>
       </header>
 
@@ -109,29 +106,43 @@
             <h2 data-i18n="researchTitle">Connecting solar eruptions to exoplanetary space weather</h2>
           </div>
           <div class="research-grid">
-            <article class="research-card">
+            <button class="research-card research-trigger" type="button" data-research-panel="0">
               <span class="card-index">01</span>
               <h3 data-i18n="researchCard1Title">Mechanism of Solar Eruptions</h3>
               <p data-i18n="researchCard1Text">
                 Solar eruptions, including flares and coronal mass ejections (CMEs), are the primary drivers of space weather. We investigate their properties and underlying mechanisms.
               </p>
-            </article>
-            <article class="research-card">
+              <span class="research-card-action" data-i18n="researchDetailsCta">Open details</span>
+            </button>
+            <button class="research-card research-trigger" type="button" data-research-panel="1">
               <span class="card-index">02</span>
               <h3 data-i18n="researchCard2Title">Solar-Stellar Connection</h3>
               <p data-i18n="researchCard2Text">
                 Using the Sun as a benchmark, we explore how CMEs occur on other stars, how their properties vary across different stellar types, and how they can be identified through observations.
               </p>
-            </article>
-            <article class="research-card">
+              <span class="research-card-action" data-i18n="researchDetailsCta">Open details</span>
+            </button>
+            <button class="research-card research-trigger" type="button" data-research-panel="2">
               <span class="card-index">03</span>
               <h3 data-i18n="researchCard3Title">Exoplanetary Space Weather</h3>
               <p data-i18n="researchCard3Text">
                 Through numerical simulations, we investigate how stellar CMEs shape exoplanetary space-weather environments and assess their impact on the habitability of exoplanets.
               </p>
-            </article>
+              <span class="research-card-action" data-i18n="researchDetailsCta">Open details</span>
+            </button>
           </div>
         </section>
+
+        <div class="research-modal" data-research-modal hidden aria-hidden="true">
+          <div class="research-modal-backdrop" data-research-close></div>
+          <section class="research-dialog" role="dialog" aria-modal="true" aria-labelledby="research-modal-title" tabindex="-1">
+            <button class="research-close" type="button" data-research-close data-i18n-aria-label="closeResearchModal" aria-label="Close research details">×</button>
+            <span class="card-index" data-research-modal-index>01</span>
+            <h2 id="research-modal-title" data-research-modal-title></h2>
+            <p class="research-modal-summary" data-research-modal-summary></p>
+            <div class="research-work-list" data-research-modal-works></div>
+          </section>
+        </div>
 
         <section id="publications" class="section-block publications">
           <div class="section-heading">
@@ -140,16 +151,16 @@
           </div>
           <ol class="publication-list">
             <li>
-              <a href="https://iopscience.iop.org/article/10.3847/1538-4357/adf18b/meta" target="_blank" rel="noreferrer" data-i18n="pubSelected1">
-                Current Helicity in Response to Coronal Mass Ejections
+              <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ae884c" target="_blank" rel="noreferrer" data-i18n="pubSelected1">
+                How Magnetic Field Strength Affects Stellar Coronal Mass Ejection Dynamics
               </a>
-              <span>The Astrophysical Journal, 990, 45 · 2025</span>
+              <span>The Astrophysical Journal, 1007(1), 95 · 2025</span>
             </li>
             <li>
-              <a href="https://www.aanda.org/articles/aa/abs/2024/06/aa48734-23/aa48734-23.html" target="_blank" rel="noreferrer" data-i18n="pubSelected2">
-                Magnetic Helicity Evolution during Active Region Emergence and Subsequent Flare Productivity
+              <a href="https://iopscience.iop.org/article/10.3847/1538-4357/adf18b/meta" target="_blank" rel="noreferrer" data-i18n="pubSelected2">
+                Current Helicity in Response to Coronal Mass Ejections
               </a>
-              <span>Astronomy &amp; Astrophysics, 686, A148 · 2024</span>
+              <span>The Astrophysical Journal, 990(1), 45 · 2025</span>
             </li>
             <li>
               <a href="https://iopscience.iop.org/article/10.3847/2041-8213/ac9aff/meta" target="_blank" rel="noreferrer" data-i18n="pubSelected3">
@@ -164,34 +175,34 @@
           <div id="all-publications" class="expand-panel" hidden>
             <h3 data-i18n="firstAuthorPublications">First-author publications</h3>
             <ol class="compact-list">
-              <li><strong>Sun, Z.</strong>, Alvarado-Gómez, J.D., Tian, H., et al. (2025). A Stellar Coronal Mass Ejection Candidate Detected on the Young Solar-Type Star DS Tucana A with VLT/ESPRESSO. Submitted to <em>The Astrophysical Journal</em>.</li>
-              <li><strong>Sun, Z.</strong>, Alvarado-Gómez, J.D., Tian, H., et al. (2025). How Magnetic Field Strength Governs Stellar Coronal Mass Ejection Dynamics: A Parametric Study. Submitted to <em>The Astrophysical Journal</em>.</li>
-              <li><strong>Sun, Z.</strong>, Alvarado-Gómez, J.D., Tian, H., et al. (2025). Intense but Harmless: Space Weather around an M dwarf. Submitted to <em>The Astrophysical Journal</em>.</li>
-              <li><strong>Sun, Z.</strong>, Alvarado-Gómez, J.D., Tian, H., et al. (2025). <a href="https://arxiv.org/abs/2606.19335" target="_blank" rel="noreferrer">Fine-scale downflows above flare ribbons captured by Solar Orbiter/EUI</a>. Accepted by <em>Astronomy &amp; Astrophysics</em>.</li>
-              <li><strong>Z. Sun</strong>, T. Li, X. Bian, et al. (2025). <a href="https://iopscience.iop.org/article/10.3847/1538-4357/adf18b/meta" target="_blank" rel="noreferrer">Current Helicity in Response to Coronal Mass Ejections</a>. <em>The Astrophysical Journal</em>, 990, 45.</li>
-              <li><strong>Z. Sun</strong>, H. Tian, T. Li, et al. (2024). <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ad738d" target="_blank" rel="noreferrer">Fast Downflows Observed during a Polar Crown Filament Eruption</a>. <em>The Astrophysical Journal</em>, 974, 205.</li>
-              <li><strong>Z. Sun</strong>, T. Li, Y. Hou, et al. (2024). <a href="https://link.springer.com/article/10.1007/s11207-024-02329-4" target="_blank" rel="noreferrer">The Origin of an Intense Geomagnetic Storm on 2023 December 1st: Successive Buildup and Eruption of Multiple Magnetic Flux Ropes</a>. <em>Solar Physics</em>, 299.</li>
-              <li><strong>Z. Sun</strong>, T. Li, Q. Wang, et al. (2024). <a href="https://www.aanda.org/articles/aa/abs/2024/06/aa48734-23/aa48734-23.html" target="_blank" rel="noreferrer">Magnetic Helicity Evolution during Active Region Emergence and Subsequent Flare Productivity</a>. <em>Astronomy &amp; Astrophysics</em>, 686, A148.</li>
-              <li><strong>Z. Sun</strong>, T. Li, H. Tian, et al. (2023). <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ace5b1/meta" target="_blank" rel="noreferrer">Observation of Two Splitting Processes in a Partial Filament Eruption on the Sun: the Role of Breakout Reconnection</a>. <em>The Astrophysical Journal</em>, 953, 148.</li>
-              <li><strong>Z. Sun</strong>, H. Tian, P. F. Chen, et al. (2022). <a href="https://iopscience.iop.org/article/10.3847/2041-8213/ac9aff/meta" target="_blank" rel="noreferrer">Cross-loop Propagation of a Quasiperiodic Extreme-Ultraviolet Wave Train Triggered by Successive Stretching of Magnetic Field Structures during a Solar Eruption</a>. <em>The Astrophysical Journal Letters</em>, 939, L18.</li>
+              <li><strong>Z. Sun</strong>, J.D. Alvarado-Gómez, H. Tian, et al. (2025), A Stellar Coronal Mass Ejection Candidate Detected on the Young Solar-Type Star DS Tucana A with VLT/ESPRESSO, submitted to <em>The Astrophysical Journal</em>.</li>
+              <li><strong>Z. Sun</strong>, J.D. Alvarado-Gómez, H. Tian, et al. (2025), Intense but Harmless: Space Weather around an M dwarf, submitted to <em>The Astrophysical Journal</em>.</li>
+              <li><strong>Z. Sun</strong>, J.D. Alvarado-Gómez &amp; H. Tian (2025). <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ae884c" target="_blank" rel="noreferrer">How Magnetic Field Strength Affects Stellar Coronal Mass Ejection Dynamics</a>. <em>The Astrophysical Journal, 1007(1), 95.</em></li>
+              <li><strong>Z. Sun</strong>, J.D. Alvarado-Gómez, H. Tian, et al. (2025). <a href="https://www.aanda.org/articles/aa/full_html/2026/07/aa59875-26/aa59875-26.html" target="_blank" rel="noreferrer">Fine-scale downflows above flare ribbons captured by Solar Orbiter/EUI</a>. <em>Astronomy &amp; Astrophysics, 711, A279</em>.</li>
+              <li><strong>Z. Sun</strong>, T. Li, X. Bian, et al. (2025). <a href="https://iopscience.iop.org/article/10.3847/1538-4357/adf18b/meta" target="_blank" rel="noreferrer">Current Helicity in Response to Coronal Mass Ejections</a>. <em>The Astrophysical Jounal, 990(1), 45.</em></li>
+              <li><strong>Z. Sun</strong>, H. Tian, T. Li, et al. (2024). <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ad738d" target="_blank" rel="noreferrer">Fast Downflows Observed during a Polar Crown Filament Eruption</a>. <em>The Astrophysical Journal, 974(2), 205.</em></li>
+              <li><strong>Z. Sun</strong>, T. Li, Y. Hou, et al. (2024). <a href="https://link.springer.com/article/10.1007/s11207-024-02329-4" target="_blank" rel="noreferrer">The Origin of an Intense Geomagnetic Storm on 2023 December 1st: Successive Buildup and Eruption of Multiple Magnetic Flux Ropes</a>. <em>Solar Physics, 299(6), 1-22.</em></li>
+              <li><strong>Z. Sun</strong>, T. Li, Q. Wang, et al. (2024). <a href="https://www.aanda.org/articles/aa/abs/2024/06/aa48734-23/aa48734-23.html" target="_blank" rel="noreferrer">Magnetic helicity evolution during active region emergence and subsequent flare productivity</a>. <em>Astronomy &amp; Astrophysics, 686, A148.</em></li>
+              <li><strong>Z. Sun</strong>, T. Li, H. Tian, et al. (2023). <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ace5b1/meta" target="_blank" rel="noreferrer">Observation of Two Splitting Processes in a Partial Filament Eruption on the Sun: the Role of Breakout Reconnection</a>. <em>The Astrophysical Journal, 953(2), 148.</em></li>
+              <li><strong>Z. Sun</strong>, H. Tian, P. F. Chen, et al. (2022). <a href="https://iopscience.iop.org/article/10.3847/2041-8213/ac9aff/meta" target="_blank" rel="noreferrer">Cross-loop Propagation of a Quasiperiodic Extreme-Ultraviolet Wave Train Triggered by Successive Stretching of Magnetic Field Structures during a Solar Eruption</a>. <em>The Astrophysical Journal Letters, 939(2), L18.</em></li>
             </ol>
             <h3 data-i18n="coauthoredPublications">Co-authored publications</h3>
             <ol class="compact-list">
-              <li>Z. Wu, T. Van Doorsselaere, J. He, ..., &amp; <strong>Z. Sun</strong>. (2026). <a href="https://arxiv.org/abs/2604.00925" target="_blank" rel="noreferrer">Imaging Magnetically Driven Astrosphere</a>. Accepted by <em>The Astrophysical Journal Letters</em>.</li>
-              <li>X. Duan, T. Li, Y. Cui, ... &amp; <strong>Z. Sun</strong>. (2026). <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ae63bb" target="_blank" rel="noreferrer">Solar Energetic Particle Events and Associated Type II Radio Bursts from Different Source Regions</a>. <em>The Astrophysical Journal</em>, 1003, 53.</li>
-              <li>F. Qiao, H. Li, J. Wang, Y. Duan, <strong>Z. Sun</strong>, et al. (2025). <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ae4bd9" target="_blank" rel="noreferrer">Fine Structure and Formation Mechanism of a Sunspot Bipolar Light Bridge in NOAA AR 13663</a>. <em>The Astrophysical Journal</em>, 1000, 205.</li>
-              <li>Y. Duan, X. Yan, J. Hong, ..., <strong>Z. Sun</strong>, et al. (2025). <a href="https://www.aanda.org/articles/aa/abs/2026/02/aa57158-25/aa57158-25.html" target="_blank" rel="noreferrer">Resolving Interchange Reconnection Dynamics in a Fan-Spine-like Topology Observed by Solar Orbiter</a>. <em>Astronomy &amp; Astrophysics</em>, 706, A1.</li>
-              <li>X. Duan, T. Li, Y. Hou, ..., <strong>Z. Sun</strong>, et al. (2025). <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ade9af" target="_blank" rel="noreferrer">A Statistical Analysis of Magnetic Parameters in Solar Source Regions of Halo Coronal Mass Ejections with and without Solar Energetic Particle Events</a>. <em>The Astrophysical Journal</em>, 988, 265.</li>
-              <li>Y. Chen, H. Lu, H. Tian, ..., <strong>Z. Sun</strong>, et al. (2025). <a href="https://iopscience.iop.org/article/10.3847/2041-8213/ade685" target="_blank" rel="noreferrer">Asymmetries in Fe IX 17.1 nm and Fe XII 19.5 nm Line Profiles as Possible Signatures of Obscuration Dimming in Sun-as-a-star Spectra</a>. <em>The Astrophysical Journal Letters</em>, 987, L22.</li>
-              <li>Y. Zhang, T. Li, W. Teng, ..., <strong>Z. Sun</strong>, et al. (2025). <a href="https://iopscience.iop.org/article/10.3847/2041-8213/add33b" target="_blank" rel="noreferrer">Quasiperiodic Slow-propagating Extreme-ultraviolet “Wave” Trains after the Filament Eruption</a>. <em>The Astrophysical Journal Letters</em>, 985, L1.</li>
-              <li>L. Chan, X. Bai, Y. Feng, ... &amp; <strong>Z. Sun</strong>. (2025). <a href="https://iopscience.iop.org/article/10.3847/1538-4357/adc10a" target="_blank" rel="noreferrer">The Detectability of Coronal Mass Ejections in the Low Corona Using Multi-slit Extreme-ultraviolet Spectroscopy</a>. <em>The Astrophysical Journal</em>, 984, 141.</li>
-              <li>Y. Zhang, T. Li, Y. Hou, X. Duan, <strong>Z. Sun</strong>, et al. (2025). <a href="https://iopscience.iop.org/article/10.3847/2041-8213/adbb6e" target="_blank" rel="noreferrer">Quasiperiodic Super-Alfvénic Slippage along Flare Ribbons Observed by the Interface Region Imaging Spectrograph</a>. <em>The Astrophysical Journal Letters</em>, 982, L9.</li>
-              <li>Y. Duan, H. Chen, Z. Hou, <strong>Z. Sun</strong>, et al. (2025). <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ada556" target="_blank" rel="noreferrer">Ubiquitous Small-scale Extreme-ultraviolet Upflow-like Events above Network Regions Observed by the Solar Orbiter/Extreme Ultraviolet Imager</a>. <em>The Astrophysical Journal</em>, 979, 195.</li>
-              <li>H. Lu, H. Tian, L. Zhang, ... &amp; <strong>Z. Sun</strong>. (2025). <a href="https://iopscience.iop.org/article/10.3847/2041-8213/ad93cc/meta" target="_blank" rel="noreferrer">An Extreme Stellar Prominence Eruption Observed by LAMOST Time-Domain Spectroscopy</a>. <em>The Astrophysical Journal Letters</em>, 978, L32.</li>
-              <li>F. Qiao, L. Li, H. Tian, ... &amp; <strong>Z. Sun</strong>. (2024). <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ad6770" target="_blank" rel="noreferrer">Three Types of Solar Coronal Rain during Magnetic Reconnection between Open and Closed Magnetic Structures</a>. <em>The Astrophysical Journal</em>, 973, 57.</li>
-              <li>Z. Yang, H. Tian, Y. Zhu, ... &amp; <strong>Z. Sun</strong>. (2024). <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ad2a44" target="_blank" rel="noreferrer">Is It Possible to Detect Coronal Mass Ejections on Solar-Type Stars through Extreme-Ultraviolet Spectral Observations?</a> <em>The Astrophysical Journal</em>, 966, 24.</li>
-              <li>Y. Duan, H. Tian, H. Chen, Y. Shen, <strong>Z. Sun</strong>, et al. (2024). <a href="https://iopscience.iop.org/article/10.3847/2041-8213/ad24f3/meta" target="_blank" rel="noreferrer">Formation of Fan-spine Magnetic Topologies through Flux Emergence and Subsequent Jet Production</a>. <em>The Astrophysical Journal Letters</em>, 962, L38.</li>
-              <li>X. Bai, H. Tian, Y. Deng, ..., <strong>Z. Sun</strong>, et al. (2023). <a href="https://iopscience.iop.org/article/10.1088/1674-4527/accc74/meta" target="_blank" rel="noreferrer">The Solar Upper Transition Region Imager (SUTRI) onboard the SATech-01 Satellite</a>. <em>Research in Astronomy and Astrophysics</em>, 23, 065014.</li>
+              <li>Z. Wu, T. Van Doorsselaere, J. He, …, &amp; <strong>Z. Sun</strong>. (2026). <a href="https://iopscience.iop.org/article/10.3847/2041-8213/ae7369" target="_blank" rel="noreferrer">Imaging Magnetically Driven Astrospheres: A Forward Modelling Approach</a>. <em>The Astrophysical Journal Letters, 1005(2), L41</em></li>
+              <li>X. Duan, T. Li, Y. Cui, … &amp; <strong>Z. Sun</strong>. (2026). <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ae63bb" target="_blank" rel="noreferrer">Solar Energetic Particle Events and Associated Type II Radio Bursts from Different Source Regions</a>. <em>The Astrophysical Journal, 1003(1), 53.</em></li>
+              <li>F. Qiao, H. Li, J. Wang, Y. Duan, <strong>Z. Sun</strong>, et al. (2025). <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ae4bd9" target="_blank" rel="noreferrer">Fine Structure and Formation Mechanism of a Sunspot Bipolar Light Bridge in NOAA AR 13663</a>. <em>The Astrophysical Journal, 1000(2), 205.</em></li>
+              <li>Y. Duan, X. Yan, J. Hong, …, <strong>Z. Sun</strong>, et al. (2025). <a href="https://www.aanda.org/articles/aa/abs/2026/02/aa57158-25/aa57158-25.html" target="_blank" rel="noreferrer">Resolving Interchange Reconnection Dynamics in a Fan-Spine-like Topology Observed by Solar Orbiter</a>. <em>Astronomy &amp; Astrophysics, 706, A1.</em></li>
+              <li>X. Duan, T. Li, Y. Hou, …, <strong>Z. Sun</strong>, et al. (2025). <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ade9af" target="_blank" rel="noreferrer">A Statistical Analysis of Magnetic Parameters in Solar Source Regions of Halo Coronal Mass Ejections with and without Solar Energetic Particle Events</a>. <em>The Astrophysical Journal, 988(2), 265.</em></li>
+              <li>Y. Chen, H. Lu, H. Tian, …, <strong>Z. Sun</strong>, et al. (2025). <a href="https://iopscience.iop.org/article/10.3847/2041-8213/ade685" target="_blank" rel="noreferrer">Asymmetries in Fe IX 17.1 nm and Fe XII 19.5 nm Line Profiles as Possible Signatures of Obscuration Dimming in Sun-as-a-star Spectra</a>. <em>The Astrophysical Journal Letters, 987(1), L22.</em></li>
+              <li>Y. Zhang, T. Li, W. Teng, …, <strong>Z. Sun</strong>, et al. (2025). <a href="https://iopscience.iop.org/article/10.3847/2041-8213/add33b" target="_blank" rel="noreferrer">Quasiperiodic Slow-propagating Extreme-ultraviolet “Wave” Trains after the Filament Eruption</a>. <em>The Astrophysical Journal Letters, 985(1), L1.</em></li>
+              <li>L. Chan, X. Bai, Y. Feng, … &amp; <strong>Z. Sun</strong>. (2025). <a href="https://iopscience.iop.org/article/10.3847/1538-4357/adc10a" target="_blank" rel="noreferrer">The Detectability of Coronal Mass Ejections in the Low Corona Using Multi-slit Extreme-ultraviolet Spectroscopy</a>. <em>The Astrophysical Journal, 984(2), 141.</em></li>
+              <li>Y. Zhang, T. Li, Y. Hou, X. Duan, <strong>Z. Sun</strong>, et al. (2025). <a href="https://iopscience.iop.org/article/10.3847/2041-8213/adbb6e" target="_blank" rel="noreferrer">Quasiperiodic Super-Alfvénic Slippage along Flare Ribbons Observed by the Interface Region Imaging Spectrograph</a>. <em>The Astrophysical Journal Letters, 982(1), L9.</em></li>
+              <li>Y. Duan, H. Chen, Z. Hou, <strong>Z. Sun</strong>, et al. (2025). <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ada556" target="_blank" rel="noreferrer">Ubiquitous Small-scale Extreme-ultraviolet Upflow-like Events above Network Regions Observed by the Solar Orbiter/Extreme Ultraviolet Imager</a>. <em>The Astrophysical Journal, 979(2), 195.</em></li>
+              <li>H. Lu, H. Tian, L. Zhang, … &amp; <strong>Z. Sun</strong>. (2025). <a href="https://iopscience.iop.org/article/10.3847/2041-8213/ad93cc/meta" target="_blank" rel="noreferrer">An Extreme Stellar Prominence Eruption Observed by LAMOST Time-Domain Spectroscopy</a>. <em>The Astrophysical Journal Letters, 978(2), L32.</em></li>
+              <li>F. Qiao, L. Li, H. Tian, … &amp; <strong>Z. Sun</strong>. (2024). <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ad6770" target="_blank" rel="noreferrer">Three Types of Solar Coronal Rain during Magnetic Reconnection between Open and Closed Magnetic Structures</a>. <em>The Astrophysical Journal, 973(1), 57.</em></li>
+              <li>Z. Yang, H. Tian, Y. Zhu, … &amp; <strong>Z. Sun</strong>. (2024). <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ad2a44" target="_blank" rel="noreferrer">Is It Possible to Detect Coronal Mass Ejections on Solar-Type Stars through Extreme-Ultraviolet Spectral Observations?</a>. <em>The Astrophysical Journal, 966(1), 24.</em></li>
+              <li>Y. Duan, H. Tian, H. Chen, Y. Shen, <strong>Z. Sun</strong>, et al. (2024). <a href="https://iopscience.iop.org/article/10.3847/2041-8213/ad24f3/meta" target="_blank" rel="noreferrer">Formation of Fan-spine Magnetic Topologies through Flux Emergence and Subsequent Jet Production</a>. <em>The Astrophysical Journal Letters, 962(2), L38.</em></li>
+              <li>X. Bai, H. Tian, Y. Deng, …, <strong>Z. Sun</strong>, et al. (2023). <a href="https://iopscience.iop.org/article/10.1088/1674-4527/accc74/meta" target="_blank" rel="noreferrer">The Solar Upper Transition Region Imager (SUTRI) onboard the SATech-01 Satellite</a>. <em>Research in Astronomy and Astrophysics, 23(6), 065014.</em></li>
             </ol>
           </div>
         </section>
@@ -274,19 +285,19 @@
           </div>
           <div class="talk-grid">
             <article>
-              <span>Jun. 2026</span>
+              <span>Aug. 2026</span>
               <h3 data-i18n="talk1Title">Space Weather around M dwarfs: Role of Coronal Mass Ejections</h3>
-              <p data-i18n="talk1Text">EAS 2026· Lausanne, Switzerland</p>
+              <p data-i18n="talk1Text">IAU Symposium 408 · Liege, Belgium</p>
             </article>
             <article>
-              <span>May 2026</span>
-              <h3 data-i18n="talk2Title">Current Helicity Reversal during Coronal Mass Ejections</h3>
-              <p data-i18n="talk2Text">EGU General Assembly · Vienna, Austria</p>
+              <span>Aug. 2026</span>
+              <h3 data-i18n="talk2Title">Space Weather around M dwarfs: Role of Coronal Mass Ejections</h3>
+              <p data-i18n="talk2Text">46th COSPAR Scientific Assembly · Florence, Italy</p>
             </article>
             <article>
-              <span>Jul. 2025</span>
-              <h3 data-i18n="talk3Title">Space Weather around Moderately-rotating Fully Convective M dwarfs</h3>
-              <p data-i18n="talk3Text">IAU Symposium 400 · Medellin, Colombia</p>
+              <span>Jun. 2026</span>
+              <h3 data-i18n="talk3Title">Space Weather around M dwarfs: Role of Coronal Mass Ejections</h3>
+              <p data-i18n="talk3Text">European Astronomical Society Annual Meeting 2026 · Lausanne, Switzerland</p>
             </article>
           </div>
           <button class="expand-button" type="button" data-toggle="all-talks" data-i18n="seeMore" aria-expanded="false">

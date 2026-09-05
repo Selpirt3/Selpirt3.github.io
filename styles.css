@@ -33,6 +33,10 @@ body {
   line-height: 1.55;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -146,32 +150,6 @@ a {
 .nav-links a:focus-visible {
   background: rgba(216, 183, 101, 0.1);
   color: var(--text);
-}
-
-.language-toggle {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 58px;
-  min-height: 42px;
-  padding: 0 14px;
-  border: 1px solid rgba(216, 183, 101, 0.46);
-  border-radius: 999px;
-  background: rgba(216, 183, 101, 0.1);
-  color: var(--gold);
-  cursor: pointer;
-  font: inherit;
-  font-size: 0.86rem;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  transition: transform 180ms ease, background 180ms ease, border-color 180ms ease;
-}
-
-.language-toggle:hover,
-.language-toggle:focus-visible {
-  transform: translateY(-1px);
-  border-color: rgba(216, 183, 101, 0.82);
-  background: rgba(216, 183, 101, 0.18);
 }
 
 main {
@@ -372,6 +350,319 @@ h3 {
 .research-card {
   min-height: 272px;
   padding: 26px;
+}
+
+.research-trigger {
+  display: grid;
+  width: 100%;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  appearance: none;
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, box-shadow 180ms ease;
+}
+
+.research-trigger:hover,
+.research-trigger:focus-visible {
+  transform: translateY(-4px);
+  border-color: rgba(216, 183, 101, 0.46);
+  background:
+    radial-gradient(circle at 18% 8%, rgba(216, 183, 101, 0.12), transparent 34%),
+    rgba(18, 18, 18, 0.78);
+  box-shadow: 0 22px 80px rgba(0, 0, 0, 0.38);
+  outline: none;
+}
+
+.research-card-action {
+  align-self: end;
+  margin-top: 24px;
+  color: var(--cyan);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.research-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  padding: clamp(14px, 3vw, 34px);
+}
+
+.research-modal[hidden] {
+  display: none;
+}
+
+.research-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 24% 18%, rgba(216, 183, 101, 0.16), transparent 28%),
+    radial-gradient(circle at 78% 26%, rgba(103, 215, 212, 0.12), transparent 30%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.86));
+  backdrop-filter: blur(18px) saturate(1.1);
+}
+
+.research-dialog {
+  position: relative;
+  width: min(1220px, 100%);
+  max-height: min(840px, calc(100vh - 40px));
+  overflow: auto;
+  padding: clamp(24px, 4.6vw, 50px);
+  border: 1px solid rgba(216, 183, 101, 0.38);
+  border-radius: 12px;
+  background:
+    radial-gradient(circle at 16% 0%, rgba(216, 183, 101, 0.16), transparent 34%),
+    radial-gradient(circle at 86% 12%, rgba(103, 215, 212, 0.12), transparent 32%),
+    linear-gradient(145deg, rgba(20, 22, 22, 0.97), rgba(8, 8, 8, 0.95)),
+    var(--panel-strong);
+  box-shadow: 0 34px 110px rgba(0, 0, 0, 0.66), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.research-dialog::before {
+  position: absolute;
+  top: 0;
+  right: 76px;
+  left: 42px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(216, 183, 101, 0.86), rgba(103, 215, 212, 0.42), transparent);
+  content: "";
+}
+
+.research-dialog::after {
+  position: absolute;
+  top: 28px;
+  right: 94px;
+  width: 116px;
+  height: 116px;
+  border: 1px solid rgba(216, 183, 101, 0.18);
+  border-radius: 999px;
+  background:
+    radial-gradient(circle, rgba(216, 183, 101, 0.18), transparent 56%),
+    conic-gradient(from 80deg, transparent, rgba(103, 215, 212, 0.16), transparent, rgba(216, 183, 101, 0.18), transparent);
+  opacity: 0.48;
+  pointer-events: none;
+  content: "";
+}
+
+.research-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+  cursor: pointer;
+  font: inherit;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.research-close:hover,
+.research-close:focus-visible {
+  border-color: rgba(216, 183, 101, 0.58);
+  color: var(--gold);
+  outline: none;
+}
+
+.research-dialog h2 {
+  max-width: 840px;
+  margin-bottom: 18px;
+  padding-right: 42px;
+  font-size: clamp(2rem, 5vw, 3.7rem);
+}
+
+.research-modal-summary {
+  max-width: 820px;
+  margin-bottom: 34px;
+  color: var(--muted);
+  font-size: 1.02rem;
+}
+
+.research-work-list {
+  display: grid;
+  gap: 22px;
+}
+
+.research-work-item {
+  position: relative;
+  display: grid;
+  color: inherit;
+  text-decoration: none;
+  min-height: 342px;
+  grid-template-columns: minmax(360px, 0.88fr) minmax(470px, 1.12fr);
+  grid-template-rows: auto auto 1fr auto;
+  gap: 12px 24px;
+  overflow: hidden;
+  padding: 18px;
+  border: 1px solid rgba(231, 219, 186, 0.18);
+  border-radius: 10px;
+  background:
+    linear-gradient(120deg, rgba(255, 255, 255, 0.05), transparent 34%),
+    radial-gradient(circle at 12% 0%, rgba(216, 183, 101, 0.12), transparent 28%),
+    rgba(255, 255, 255, 0.032);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.055);
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.research-work-item::before {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background:
+    linear-gradient(90deg, rgba(216, 183, 101, 0.18), transparent 24%, transparent 76%, rgba(103, 215, 212, 0.14));
+  opacity: 0;
+  pointer-events: none;
+  content: "";
+  transition: opacity 180ms ease;
+}
+
+.research-work-item:hover {
+  transform: translateY(-2px);
+  border-color: rgba(216, 183, 101, 0.34);
+  background:
+    linear-gradient(120deg, rgba(255, 255, 255, 0.064), transparent 34%),
+    radial-gradient(circle at 12% 0%, rgba(216, 183, 101, 0.15), transparent 28%),
+    rgba(255, 255, 255, 0.042);
+}
+
+.research-work-item:focus-visible {
+  border-color: rgba(103, 215, 212, 0.6);
+  box-shadow:
+    0 0 0 3px rgba(103, 215, 212, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.055);
+  outline: none;
+}
+
+.research-work-item:hover::before {
+  opacity: 1;
+}
+
+.research-work-media {
+  display: grid;
+  grid-column: 1;
+  grid-row: 1 / 5;
+  width: 100%;
+  max-height: 340px;
+  height: auto;
+  margin: 0;
+  align-self: center;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid rgba(103, 215, 212, 0.24);
+  border-radius: 9px;
+  background:
+    radial-gradient(circle at 50% 42%, rgba(103, 215, 212, 0.13), transparent 34%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.052), rgba(255, 255, 255, 0.012));
+  aspect-ratio: var(--media-aspect, 16 / 9);
+  box-shadow:
+    0 18px 50px rgba(0, 0, 0, 0.36),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.035);
+}
+
+.research-work-media.is-loaded {
+  background:
+    radial-gradient(circle at 50% 42%, rgba(103, 215, 212, 0.09), transparent 34%),
+    rgba(255, 255, 255, 0.025);
+}
+
+.research-work-media img {
+  display: block;
+  width: calc(100% - 14px);
+  height: calc(100% - 14px);
+  max-height: 326px;
+  object-fit: contain;
+  border-radius: 6px;
+  transition: transform 260ms ease, filter 260ms ease;
+}
+
+.research-work-item:hover .research-work-media img {
+  filter: saturate(1.06) contrast(1.03);
+  transform: scale(1.015);
+}
+
+.research-work-media span {
+  color: var(--soft);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.research-work-label {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  grid-column: 2;
+  margin-bottom: 10px;
+  width: max-content;
+  padding: 5px 10px;
+  border: 1px solid rgba(216, 183, 101, 0.3);
+  border-radius: 999px;
+  background: rgba(216, 183, 101, 0.08);
+  color: var(--gold);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.research-work-item h3 {
+  position: relative;
+  z-index: 1;
+  grid-column: 2;
+  margin-bottom: 4px;
+  font-family: var(--serif);
+  font-size: clamp(1.32rem, 2vw, 1.88rem);
+  line-height: 1.08;
+}
+
+.research-work-item p {
+  position: relative;
+  z-index: 1;
+  grid-column: 2;
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.research-work-link {
+  position: relative;
+  z-index: 1;
+  grid-column: 2;
+  align-self: end;
+  width: max-content;
+  margin-top: 4px;
+  color: var(--cyan);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.research-work-item:nth-child(even) {
+  grid-template-columns: minmax(470px, 1.12fr) minmax(360px, 0.88fr);
+}
+
+.research-work-item:nth-child(even) .research-work-media {
+  grid-column: 2;
+}
+
+.research-work-item:nth-child(even) .research-work-label,
+.research-work-item:nth-child(even) h3,
+.research-work-item:nth-child(even) p,
+.research-work-item:nth-child(even) .research-work-link {
+  grid-column: 1;
 }
 
 .achievement-layout {
@@ -740,6 +1031,46 @@ h3 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .research-dialog {
+    max-height: calc(100vh - 28px);
+  }
+
+  .research-dialog::after {
+    display: none;
+  }
+
+  .research-work-item,
+  .research-work-item:nth-child(even) {
+    min-height: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 12px;
+  }
+
+  .research-work-media,
+  .research-work-item:nth-child(even) .research-work-media,
+  .research-work-label,
+  .research-work-item:nth-child(even) .research-work-label,
+  .research-work-item h3,
+  .research-work-item:nth-child(even) h3,
+  .research-work-item p,
+  .research-work-item:nth-child(even) p,
+  .research-work-link,
+  .research-work-item:nth-child(even) .research-work-link {
+    grid-column: 1;
+  }
+
+  .research-work-media,
+  .research-work-item:nth-child(even) .research-work-media {
+    grid-row: auto;
+    max-height: none;
+    height: auto;
+  }
+
+  .research-work-media img {
+    max-height: none;
+  }
+
   .achievement-layout {
     grid-template-columns: 1fr;
   }
@@ -793,6 +1124,22 @@ h3 {
 
   .section-block {
     padding-top: 68px;
+  }
+
+  .research-modal {
+    padding: 10px;
+  }
+
+  .research-dialog {
+    padding: 22px;
+  }
+
+  .research-dialog h2 {
+    padding-right: 34px;
+  }
+
+  .research-work-item {
+    padding: 14px;
   }
 
   .contact-section {
