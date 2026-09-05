@@ -340,44 +340,6 @@ h3 {
   box-shadow: 0 0 22px rgba(103, 215, 212, 0.7);
 }
 
-.metrics {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1px;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--line);
-  box-shadow: var(--shadow);
-}
-
-.metrics div {
-  min-height: 132px;
-  padding: 22px;
-  background: rgba(8, 9, 9, 0.82);
-}
-
-.metric-value,
-.metric-label {
-  display: block;
-}
-
-.metric-value {
-  margin-bottom: 8px;
-  color: var(--text);
-  font-family: var(--serif);
-  font-size: clamp(2rem, 4vw, 3.1rem);
-  font-weight: 700;
-  line-height: 1;
-}
-
-.metric-label {
-  color: var(--muted);
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
 .section-block {
   padding: 94px 0 0;
 }
@@ -772,7 +734,6 @@ h3 {
     max-width: 430px;
   }
 
-  .metrics,
   .research-grid,
   .achievement-layout,
   .talk-grid {
@@ -824,15 +785,10 @@ h3 {
     font-size: clamp(3.4rem, 19vw, 5.4rem);
   }
 
-  .metrics,
   .research-grid,
   .award-list,
   .talk-grid {
     grid-template-columns: 1fr;
-  }
-
-  .metrics div {
-    min-height: 112px;
   }
 
   .section-block {

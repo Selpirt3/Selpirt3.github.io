@@ -25,11 +25,6 @@ const translations = {
     roleAip: "Visiting Student, AIP",
     roleAipMeta: "Stellar Physics and Exoplanets<br>Nov 2024 -- Now",
 
-    metricFirstAuthor: "first-author papers",
-    metricPublications: "publications",
-    metricTalks: "conference talks",
-    metricFunding: "funding",
-
     researchEyebrow: "Research",
     researchTitle: "Connecting solar eruptions to exoplanetary space weather",
     researchCard1Title: "Mechanism of Solar Eruptions",
@@ -40,7 +35,7 @@ const translations = {
       "Using the Sun as a benchmark, we explore how CMEs occur on other stars, how their properties vary across different stellar types, and how they can be identified through observations.",
     researchCard3Title: "Exoplanetary Space Weather",
     researchCard3Text:
-      "Through numerical simulations, we investigate how stellar CMEs shape exoplanetary space-weather environments and assess their impact on the habitability.",
+      "Through numerical simulations, we investigate how stellar CMEs shape exoplanetary space-weather environments and assess their impact on the habitability of exoplanets.",
 
     publicationsEyebrow: "Publications",
     publicationsTitle: "Selected works",
@@ -48,7 +43,7 @@ const translations = {
     pubSelected2:
       "Magnetic Helicity Evolution during Active Region Emergence and Subsequent Flare Productivity",
     pubSelected3:
-      "Cross-loop Propagation of a Quasiperiodic Extreme-Ultraviolet Wave Train",
+      "Cross-loop Propagation of a Quasiperiodic Extreme-Ultraviolet Wave Train Triggered by Successive Stretching of Magnetic Field Structures during a Solar Eruption",
     firstAuthorPublications: "First-author publications",
     coauthoredPublications: "Co-authored publications",
 
@@ -104,18 +99,13 @@ const translations = {
 
     heroEyebrow: "空间物理学 · 天体物理学",
     heroLede:
-      "北京大学空间物理学博士研究生，现为德国莱布尼茨天体物理研究所（AIP）访问学生。研究方向包括太阳与恒星爆发，以及系外行星周围的空间天气环境。",
+      "北京大学空间物理学博士研究生，现为德国莱布尼茨天体物理研究所（AIP）访问学生。研究方向包括太阳与恒星爆发，以及系外行星的空间天气环境。",
     email: "邮件",
 
     rolePhd: "博士研究生，北京大学",
     rolePhdMeta: "空间物理学<br>2022 年 9 月至今",
     roleAip: "访问学生，AIP",
     roleAipMeta: "恒星物理与系外行星<br>2024 年 11 月至今",
-
-    metricFirstAuthor: "第一作者论文",
-    metricPublications: "发表论文",
-    metricTalks: "会议报告",
-    metricFunding: "科研资助",
 
     researchEyebrow: "研究",
     researchTitle: "从太阳爆发到系外空间天气",
@@ -127,13 +117,15 @@ const translations = {
       "以太阳为基准，我们探索其他恒星上的 CME 可能如何发生、其性质如何随恒星类型变化，以及如何通过观测探测这些爆发现象。",
     researchCard3Title: "系外空间天气",
     researchCard3Text:
-      "通过数值模拟，我们研究恒星 CME 如何塑造系外行星周围的空间天气环境，并评估其对系外行星宜居性的影响。",
+      "通过数值模拟，我们研究恒星 CME 如何塑造系外行星的空间天气环境，并评估其对系外行星宜居性的影响。",
 
     publicationsEyebrow: "论文",
     publicationsTitle: "代表性工作",
-    pubSelected1: "日冕物质抛射过程中的电流螺度响应",
-    pubSelected2: "活动区浮现及后续耀斑产出过程中的磁螺度演化",
-    pubSelected3: "准周期极紫外波列的跨环传播",
+    pubSelected1: "Current Helicity in Response to Coronal Mass Ejections",
+    pubSelected2:
+      "Magnetic Helicity Evolution during Active Region Emergence and Subsequent Flare Productivity",
+    pubSelected3:
+      "Cross-loop Propagation of a Quasiperiodic Extreme-Ultraviolet Wave Train Triggered by Successive Stretching of Magnetic Field Structures during a Solar Eruption",
     firstAuthorPublications: "第一作者论文",
     coauthoredPublications: "合作论文",
 
@@ -458,7 +450,7 @@ if (canvas && ctx) {
 }
 
 const revealTargets = document.querySelectorAll(
-  ".metrics, .research-card, .achievement-card, .award-card, .publication-list li, .timeline article, .talk-grid article, .expand-panel"
+  ".research-card, .achievement-card, .award-card, .publication-list li, .timeline article, .talk-grid article, .expand-panel"
 );
 
 revealTargets.forEach((target) => target.classList.add("reveal"));
