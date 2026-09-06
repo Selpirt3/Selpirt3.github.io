@@ -29,7 +29,7 @@ const translations = {
 
     researchEyebrow: "Research",
     researchTitle:
-      '<span class="heading-line">Connecting Solar Eruptions to</span><span class="heading-line">Exoplanetary Space Weather</span>',
+      "Connecting Solar Eruptions to<br>Exoplanetary Space Weather",
     researchCard1Title: "Mechanism of Solar Eruptions",
     researchCard1Text:
       "Solar eruptions, including flares and coronal mass ejections (CMEs), are the primary drivers of space weather. We investigate their properties and underlying mechanisms.",

@@ -333,11 +333,6 @@ h3 {
   font-size: clamp(2.15rem, 4.35vw, 4rem);
 }
 
-.heading-line {
-  display: block;
-  white-space: nowrap;
-}
-
 .research-grid,
 .talk-grid,
 .award-list {
@@ -1043,10 +1038,6 @@ h3 {
 
   .research-dialog {
     max-height: calc(100vh - 28px);
-  }
-
-  .heading-line {
-    white-space: normal;
   }
 
   .research-dialog::after {
