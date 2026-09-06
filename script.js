@@ -28,7 +28,8 @@ const translations = {
     roleAipMeta: "Stellar Physics and Exoplanets<br>Nov 2024 -- Now",
 
     researchEyebrow: "Research",
-    researchTitle: "Connecting Solar Eruptions to Exoplanetary Space Weather",
+    researchTitle:
+      '<span class="heading-line">Connecting Solar Eruptions to</span><span class="heading-line">Exoplanetary Space Weather</span>',
     researchCard1Title: "Mechanism of Solar Eruptions",
     researchCard1Text:
       "Solar eruptions, including flares and coronal mass ejections (CMEs), are the primary drivers of space weather. We investigate their properties and underlying mechanisms.",
