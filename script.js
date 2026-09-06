@@ -75,12 +75,12 @@ const translations = {
     experience2Text: "Observer · La Silla Observatory, Chile",
 
     talksEyebrow: "Presentations",
-    talksTitle: "Recent conference talks",
-    talk1Title: "Space Weather around M dwarfs: Role of Coronal Mass Ejections",
+    talksTitle: "Recent Conference Talks",
+    talk1Title: "Space Weather Around M Dwarfs: Role of Coronal Mass Ejections",
     talk1Text: "IAU Symposium 408 · Liege, Belgium",
-    talk2Title: "Space Weather around M dwarfs: Role of Coronal Mass Ejections",
+    talk2Title: "Space Weather Around M Dwarfs: Role of Coronal Mass Ejections",
     talk2Text: "46th COSPAR Scientific Assembly · Florence, Italy",
-    talk3Title: "Space Weather around M dwarfs: Role of Coronal Mass Ejections",
+    talk3Title: "Space Weather Around M Dwarfs: Role of Coronal Mass Ejections",
     talk3Text:
       "European Astronomical Society Annual Meeting 2026 · Lausanne, Switzerland",
     contributedTalks: "Contributed talks",
