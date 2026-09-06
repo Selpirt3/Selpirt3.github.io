@@ -28,7 +28,7 @@ const translations = {
     roleAipMeta: "Stellar Physics and Exoplanets<br>Nov 2024 -- Now",
 
     researchEyebrow: "Research",
-    researchTitle: "Connecting solar eruptions to exoplanetary space weather",
+    researchTitle: "Connecting Solar Eruptions to Exoplanetary Space Weather",
     researchCard1Title: "Mechanism of Solar Eruptions",
     researchCard1Text:
       "Solar eruptions, including flares and coronal mass ejections (CMEs), are the primary drivers of space weather. We investigate their properties and underlying mechanisms.",
@@ -42,7 +42,7 @@ const translations = {
     closeResearchModal: "Close research details",
 
     publicationsEyebrow: "Publications",
-    publicationsTitle: "Selected works",
+    publicationsTitle: "Selected Works",
     pubSelected1:
       "How Magnetic Field Strength Affects Stellar Coronal Mass Ejection Dynamics",
     pubSelected2: "Current Helicity in Response to Coronal Mass Ejections",
@@ -52,7 +52,7 @@ const translations = {
     coauthoredPublications: "Co-authored publications",
 
     achievementsEyebrow: "Achievements",
-    achievementsTitle: "Funding and honors",
+    achievementsTitle: "Funding and Honors",
     fundingLabel: "Funding",
     fundingTitle: "NSFC Basic Research Scheme for PhD Students",
     fundingRole: "Principal Investigator (PI)",
