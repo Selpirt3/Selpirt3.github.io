@@ -45,7 +45,7 @@ const translations = {
     publicationsEyebrow: "Publications",
     publicationsTitle: "Selected Works",
     pubSelected1:
-      "How Magnetic Field Strength Affects Stellar Coronal Mass Ejection Dynamics",
+      "Intense but Harmless: Exo-Space Weather around an M Dwarf with a Single-hemisphere Dynamo",
     pubSelected2: "Current Helicity in Response to Coronal Mass Ejections",
     pubSelected3:
       "Cross-loop Propagation of a Quasiperiodic Extreme-Ultraviolet Wave Train Triggered by Successive Stretching of Magnetic Field Structures during a Solar Eruption",
@@ -129,7 +129,7 @@ const translations = {
     publicationsEyebrow: "论文",
     publicationsTitle: "代表性工作",
     pubSelected1:
-      "How Magnetic Field Strength Affects Stellar Coronal Mass Ejection Dynamics",
+      "Intense but Harmless: Exo-Space Weather around an M Dwarf with a Single-hemisphere Dynamo",
     pubSelected2: "Current Helicity in Response to Coronal Mass Ejections",
     pubSelected3:
       "Cross-loop Propagation of a Quasiperiodic Extreme-Ultraviolet Wave Train Triggered by Successive Stretching of Magnetic Field Structures during a Solar Eruption",
